@@ -1,0 +1,118 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Kerala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Sabarimala Temple Section -->
+  <h3>Sabarimala Temple</h3>
+  <div class="image-row">
+    <img src="images/kerala1.jpg" alt="Sabarimala Temple">
+    <img src="images/kerala3.jpg" alt="Sabarimala Temple">
+  </div>
+  
+  <p><b>Location:</b> Sabarimala, Periyar Tiger Reserve, Pathanamthitta, Kerala</p>
+  <p><b>Deity:</b> Lord Ayyappa (son of Shiva and Mohini)</p>
+  <p><b>Significance:</b> One of the largest annual pilgrimages in the world</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#sabarimalaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Sabarimala -->
+  <div class="modal fade" id="sabarimalaModal" tabindex="-1" aria-labelledby="sabarimalaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="sabarimalaModalLabel">Sabarimala Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Unique Practices:</b> 41-day vratham before pilgrimage; traditional restriction on women aged 10–50</p>
+          <p><b>Pilgrimage Route:</b> Devotees walk through forests to reach the shrine</p>
+          <p><b>Iconic Symbol:</b> Chanting “Swamiye Saranam Ayyappa”</p>
+          <p><b>Sacred Spot:</b> 18 holy steps (Pathinettam Padi) to the sanctum</p>
+          <p><b>Festival:</b> Makaravilakku — celestial light sighting and massive gathering</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Guruvayur Temple Section -->
+  <h3 class="mt-5">Guruvayur Temple</h3>
+  <div class="image-row">
+    <img src="images/kerala2.jpg" alt="Guruvayur Temple">
+    <img src="images/kerala4.jpg" alt="Guruvayur Temple">
+  </div>
+
+  <p><b>Location:</b> Guruvayur, Thrissur district, Kerala</p>
+  <p><b>Deity:</b> Guruvayurappan (Lord Krishna in child form)</p>
+  <p><b>Significance:</b> Called “Dwarka of the South” and “Bhuloka Vaikunta”</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#guruvayurModal">
+    More Info
+  </button>
+
+  <!-- Modal for Guruvayur -->
+  <div class="modal fade" id="guruvayurModal" tabindex="-1" aria-labelledby="guruvayurModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="guruvayurModalLabel">Guruvayur Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Architecture:</b> Traditional Kerala style with gold-plated flagstaff, wood carvings</p>
+          <p><b>Rituals:</b> Udayasthamana Pooja (sunrise to sunset), Thulabharam, Bhasma Aarti</p>
+          <p><b>Festivals:</b> Krishna Janmashtami, Guruvayur Ekadasi</p>
+          <p><b>Elephant Sanctuary:</b> Over 50 elephants maintained for temple processions</p>
+          <p><b>Management:</b> Guruvayur Devaswom Board</p>
+          <p><b>Entry Rules:</b> Hindus only, with strict dress codes</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (for modals) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

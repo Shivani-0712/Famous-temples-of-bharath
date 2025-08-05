@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Chhattisgarh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Bhoramdeo Temple Section -->
+  <h3>Bhoramdeo Temple</h3>
+  <div class="image-row">
+    <img src="images/cha1.jpg" alt="Bhoramdeo Temple">
+    <img src="images/cha3.jpg" alt="Bhoramdeo Temple">
+  </div>
+  
+  <p><b>Location:</b> Kawardha district, Chhattisgarh</p>
+  <p><b>Deity:</b> Lord Shiva (as Bhoramdeo)</p>
+  <p><b>Architecture:</b> Intricate sculptures and carvings resembling Khajuraho temples</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#bhoramdeoModal">
+    More Info
+  </button>
+
+  <!-- Modal for Bhoramdeo -->
+  <div class="modal fade" id="bhoramdeoModal" tabindex="-1" aria-labelledby="bhoramdeoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="bhoramdeoModalLabel">Bhoramdeo Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> Known for erotic sculptures and artistry</p>
+          <p><b>Historical Background:</b> Built between the 11th and 12th centuries</p>
+          <p><b>Religious Importance:</b> A sacred site for Lord Shiva devotees</p>
+          <p><b>Legends:</b> Linked with Bhoramdeo, considered a form of Lord Shiva</p>
+          <p><b>Tourism:</b> Surrounded by lush forests, popular for spiritual and heritage tourism</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kawardha Danteshwari Temple Section -->
+  <h3 class="mt-5">Kawardha Danteshwari Temple</h3>
+  <div class="image-row">
+    <img src="images/cha2.jpg" alt="Kawardha Danteshwari Temple">
+    <img src="images/cha4.jpg" alt="Kawardha Danteshwari Temple">
+  </div>
+
+  <p><b>Location:</b> Kawardha, Chhattisgarh</p>
+  <p><b>Deity:</b> Goddess Danteshwari (form of Goddess Durga)</p>
+  <p><b>Architecture:</b> Traditional Chhattisgarhi style with intricate carvings</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#danteshwariModal">
+    More Info
+  </button>
+
+  <!-- Modal for Danteshwari Temple -->
+  <div class="modal fade" id="danteshwariModal" tabindex="-1" aria-labelledby="danteshwariModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="danteshwariModalLabel">Kawardha Danteshwari Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> One of the 51 Shakti Peethas</p>
+          <p><b>Legend:</b> Believed to be where the tooth of Goddess Sati fell</p>
+          <p><b>Religious Importance:</b> Major Shakti worship center and pilgrimage site</p>
+          <p><b>Festivals:</b> Navaratri and other Durga-centric celebrations attract thousands</p>
+          <p><b>Historical Background:</b> Ancient and revered site, rooted in local belief systems</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

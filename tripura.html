@@ -1,0 +1,117 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Tripura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Tripura Sundari Temple Section -->
+  <h3>Tripura Sundari Temple</h3>
+  <div class="image-row">
+    <img src="images/tri1.jpg" alt="Tripura Sundari Temple">
+    <img src="images/tri3.jpg" alt="Tripura Sundari Temple">
+  </div>
+
+  <p><b>Location:</b> Udaipur, Gomati district, Tripura</p>
+  <p><b>Deity:</b> Goddess Tripura Sundari (an incarnation of Shakti/Parvati)</p>
+  <p><b>Architecture:</b> Distinct Bengali hut-shaped (chala) roof, on a small hillock</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#tripuraSundariModal">
+    More Info
+  </button>
+
+  <!-- Modal for Tripura Sundari -->
+  <div class="modal fade" id="tripuraSundariModal" tabindex="-1" aria-labelledby="tripuraSundariModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="tripuraSundariModalLabel">Tripura Sundari Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>One of 51 Shakti Peethas:</b> Believed to be the spot where Sati's little toe fell</p>
+          <p><b>Also Known As:</b> Matabari Temple</p>
+          <p><b>Built By:</b> Maharaja Dhanya Manikya in 1501 AD</p>
+          <p><b>Sacred Pond:</b> Kalyan Sagar beside the temple, home to rare tortoises</p>
+          <p><b>Festival:</b> Grand Diwali Mela with massive devotee turnout</p>
+          <p><b>Importance:</b> Major pilgrimage site in northeast India</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bhuvaneswari Temple Section -->
+  <h3 class="mt-5">Bhuvaneswari Temple</h3>
+  <div class="image-row">
+    <img src="images/tri2.jpg" alt="Bhuvaneswari Temple">
+    <img src="images/tri4.jpg" alt="Bhuvaneswari Temple">
+  </div>
+  
+  <p><b>Location:</b> Near Rudrasagar Lake, Udaipur, Tripura</p>
+  <p><b>Deity:</b> Goddess Bhuvaneswari, a form of Durga/Parvati</p>
+  <p><b>Architecture:</b> Features a curved Bengali roof style with elegant carvings</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#bhuvaneswariModal">
+    More Info
+  </button>
+
+  <!-- Modal for Bhuvaneswari -->
+  <div class="modal fade" id="bhuvaneswariModal" tabindex="-1" aria-labelledby="bhuvaneswariModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="bhuvaneswariModalLabel">Bhuvaneswari Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built By:</b> Maharaja Govinda Manikya in the 17th century</p>
+          <p><b>Literary Connection:</b> Mentioned in Rabindranath Tagore’s plays Rajarshi and Bisarjan</p>
+          <p><b>Scenic Spot:</b> Overlooks the lake and the old royal palace ruins</p>
+          <p><b>Historic Value:</b> Reflects Tripura’s royal heritage and devotion to the goddess</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>famous temples of india</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .map-container {
+      text-align: center;
+      position: relative;
+    }
+    .popup-box {
+      display: none;
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      width: 220px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+    .popup-box h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+    .popup-box p {
+      margin: 5px 0;
+      font-size: 13px;
+      color: #555;
+    }
+    .popup-box a {
+      text-decoration: none;
+      color: #0066cc;
+      font-size: 13px;
+    }
+    .close-btn {
+      float: right;
+      font-weight: bold;
+      cursor: pointer;
+      color: #999;
+    }
+    .close-btn:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="map-container">
+  <img src="india.jpg" usemap="#india" id="india-map" />
+
+   <div id="popup-ap" class="popup-box" style="top: 400px; left: 300px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Andhra Pradesh</h3><p><strong><p><b>Tirumala Venkateswara Temple:</b></p></strong>
+    <img src="images/andra1.jpg" width="50%">
+    <p><b>Location</b>: Tirumala Hills, Tirupati, Andhra Pradesh</p></p
+    
+   <a href="andhrapradesh.html" target="_blank">View More →</a></div>
+
+  <div id="popup-ar" class="popup-box" style="top: 120px; left: 620px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Arunachal Pradesh</h3><p><strong><p><b>Parashuram Kund Temple</b></p></strong>
+    <img src="images/arun1.jpg" width="50%">
+    <p><b>Location</b>: Lohit district, Arunachal Pradesh, on the banks of the Brahmaputra (Lohit) River</p>
+
+    <a href="arunachalpradesh.html" target="_blank">View More →</a></div>
+
+  <div id="popup-as" class="popup-box" style="top: 140px; left: 580px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Assam</h3><p><strong>Kamakhya Temple</strong></p>
+    <img src="images/assam1.jpg" width="50%">
+    <p><b>Location</b>: Nilachal Hill, Guwahati, Assam</p>
+
+    <a href="assam.html" target="_blank">View More →</a></div>
+  <div id="popup-br" class="popup-box" style="top: 180px; left: 500px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Bihar</h3><p><strong>Mahabodhi Temple</strong></p>
+    <img src="images/bihar1.jpg" width="50%">
++    <p><b>Location</b>: Bodh Gaya, Bihar</p>
+    <a href="bihar.html" target="_blank">View More →</a></div>
+  <div id="popup-ct" class="popup-box" style="top: 230px; left: 460px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Chhattisgarh</h3><p><strong>Bhoramdeo temple</strong></p>
+    <img src="images/cha1.jpg" width="50%">
+    <p><b>Location</b>: Situated in the Kawardha district of Chhattisgarh, India.</p>
+
+    <a href="chattisgarh.html" target="_blank">View More →</a></div>
+    
+  <div id="popup-ga" class="popup-box" style="top: 370px; left: 180px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Goa</h3><p><strong>  <p><b>Shantadurga Temple in Goa</b>:</p></strong></p>
+    <img src="images/goa1.jpg" width="50%">
+    <p><b>Location</b>: Situated in Kavalem village, Ponda Taluka, approximately 33 km from Panaji, Goa.</p>
+
+    <a href="goa.html" target="_blank">View More →</a></div>
+  <div id="popup-gj" class="popup-box" style="top: 270px; left: 220px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Gujarat</h3><p><strong><p><b>Somnath Temple</b>:</p> </strong></p>
+    <img src="images/gujarat1.jpg" width="50%">
+    <p><b>Location</b>: Prabhas Patan, near Veraval, Saurashtra, Gujarat, India.</p>
+    
+    <a href="gujarat.html" target="_blank">View More →</a></div>
+  <div id="popup-hr" class="popup-box" style="top: 160px; left: 280px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Haryana</h3><p><strong>Bhuteshwar Mahadev Temple</strong></p>
+    <img src="images/har1.jpg" width="50%">
+    <p><b> Location</b>: Situated in Mathura, approximately 2 km from Mathura Junction railway station.</p> 
+
+    <a href="haryana.html" target="_blank">View More →</a></div>
+  <div id="popup-hp" class="popup-box" style="top: 100px; left: 290px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Himachal Pradesh</h3><p><strong><p><b>Baijnath Temple </b>:</p></strong></p>
+    <img src="images/him1.jpg" width="50%">
+    <p><b>Location</b>: Baijnath town, Kangra district, Himachal Pradesh.</p>
+
+    <a href="himachalpradesh.html" target="_blank">View More →</a></div>
+  <div id="popup-jh" class="popup-box" style="top: 210px; left: 490px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Jharkhand</h3><p><strong>  <p><b>Baidyanath Temple</b>:</p></strong></p>
+    <img src="images/jhar1.jpg" width="50%">
+    <p><b>Location</b>: Deoghar, Jharkhand.</p>
+
+    <a href="jharkhand.html" target="_blank">View More →</a></div>
+  <div id="popup-ka" class="popup-box" style="top: 430px; left: 250px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Karnataka</h3><p><strong>  <p><b>Kukke Subramanya Temple</b>:</p></strong></p>
+    <img src="images/K1.jpg" width="50%">
+    <p><b> Location</b>: Subramanya, Dakshina Kannada district, Karnataka.</p>
+
+    
+    <a href="karnataka.html" target="_blank">View More →</a></div>
+  <div id="popup-kl" class="popup-box" style="top: 500px; left: 270px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Kerala</h3><p><strong><p><b>Sabarimala Temple (Kerala)</b>:</p></strong></p>
+    <img src="images/kerala1.jpg" width="50%">
+    <p><b>Location</b>: Sabarimala, in the Periyar Tiger Reserve, Pathanamthitta district, Kerala.</p>
+    
+    <a href="kerala.html" target="_blank">View More →</a></div>
+  <div id="popup-mp" class="popup-box" style="top: 300px; left: 330px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Madhya Pradesh</h3><p><strong>  <p><b>Mahakaleshwar Temple</b>:</p></strong></p>
+    <img src="images/mad1.jpg" width="50%">
+    <p><b>Location</b>: Ujjain city, Madhya Pradesh.</p>
+    
+    <a href="madhyapradesh.html" target="_blank">View More →</a></div>
+  <div id="popup-mh" class="popup-box" style="top: 350px; left: 270px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Maharashtra</h3><p><strong>  <p><b>Siddhivinayak Temple</b>:</p></strong></p>
+    <img src="images/mah1.jpg" width="50%">
+    <p><b>Location</b>: Prabhadevi, Mumbai.</p>
+    
+    <a href="maharastra.html" target="_blank">View More →</a></div>
+  <div id="popup-mn" class="popup-box" style="top: 200px; left: 640px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Manipur</h3><p><strong>  <p><b>Shri Govindajee Temple</b>:</p></strong></p>
+    <img src="images/mani1.jpg" width="50%">
+    <p><b>Location</b>: Near the Royal Palace, Imphal, Manipur.</p>
+
+    <a href="manipur.html" target="_blank">View More →</a></div>
+  <div id="popup-ml" class="popup-box" style="top: 180px; left: 600px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Meghalaya</h3><p><strong><p><b>Nartiang Durga Temple</b>:</p></strong></p>
+    <img src="images/megha1.jpg" width="50%">
+    <p><b>Location</b>: Nartiang village, West Jaintia Hills, Meghalaya.</p>
+    
+    <a href="meghalaya.html" target="_blank">View More →</a></div>
+  <div id="popup-mz" class="popup-box" style="top: 220px; left: 620px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Mizoram</h3><p><strong>  <p><b>Solomon’s Temple</b>:</p></strong></p>
+    <img src="images/mizoram1.jpg" width="50%">
+    <p><b>Location</b>: Chawlhhmun, Aizawl, Mizoram.</p>
+
+    <a href="mizoram.html" target="_blank">View More →</a></div>
+  <div id="popup-nl" class="popup-box" style="top: 160px; left: 630px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Nagaland</h3><p><strong>  <p><b>Dimapur Kalibari Temple</b>:</p></strong></p>
+    <img src="images/naga1.jpg" width="50%">
+    <p><b>Location</b>: Dimapur, Nagaland.</p>
+    
+    <a href="nagaland.html" target="_blank">View More →</a></div>
+  <div id="popup-or" class="popup-box" style="top: 290px; left: 500px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Odisha</h3><p><strong>  <p><b>Jagannath Temple</b></p></strong></p>
+    <img src="images/odisha1.jpg" width="50%">
+    <p><b>Location</b>: Puri, Odisha (Eastern India).</p>
+    
+    <a href="odisha.html" target="_blank">View More →</a></div>
+  <div id="popup-pb" class="popup-box" style="top: 140px; left: 250px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Punjab</h3><p><strong>  <p><b>Durgiana Temple</b>:</p></strong></p>
+    <img src="images/pun1.jpg" width="50%">
+    <p><b>Location</b>: Amritsar, near the Golden Temple.</p>
+    
+    <a href="punjab.html" target="_blank">View More →</a></div>
+  <div id="popup-rj" class="popup-box" style="top: 220px; left: 180px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Rajasthan</h3><p><strong><p><b>Brahma Temple</b>:</p></strong></p>
+    <img src="images/raj1.jpg" width="50%">
+    <p><b>Location</b>: Pushkar, Rajasthan, India.</p>
+    
+    <a href="rajasthan.html" target="_blank">View More →</a></div>
+  <div id="popup-sk" class="popup-box" style="top: 150px; left: 530px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Sikkim</h3><p><strong>  <p><b>Kirateshwar Mahadev Temple</b>:</p></strong></p>
+    <img src="images/sikkim1.jpg" width="50%">
+    <p><b>Location</b>: Near Legship, West Sikkim, on the banks of the Rangit River.</p>
+    
+    <a href="sikkim.html" target="_blank">View More →</a></div>
+  <div id="popup-tn" class="popup-box" style="top: 520px; left: 320px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Tamil Nadu</h3><p><strong>  <p><b>Meenakshi Temple</b>:</p></strong></p>
+    <img src="images/tam1.jpg" width="50%">
+    <p><b>Location</b>: Madurai, Tamil Nadu.</p>
+    
+    <a href="tamilnadu.html" target="_blank">View More →</a></div>
+  <div id="popup-tg" class="popup-box" style="top: 380px; left: 340px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Telangana</h3><p><strong>  <p><b>Yadadri Temple</b>:</p></strong></p>
+    <img src="images/tel1.jpg" width="50%">
+    <p><b>Location</b>: Yadagirigutta, near Hyderabad, Telangana.</p>
+    
+    <a href="telangana.html" target="_blank">View More →</a></div>
+  <div id="popup-tr" class="popup-box" style="top: 220px; left: 670px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Tripura</h3><p><strong>  <p><b>Tripura Sundari Temple (Udaipur, Tripura)</b></p></strong></p>
+    <img src="images/tri1.jpg" width="50%">
+    <p><b>Location</b>: Udaipur, Gomati district, Tripura.</p>
+    
+    <a href="tripura.html" target="_blank">View More →</a></div>
+  <div id="popup-up" class="popup-box" style="top: 200px; left: 360px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Uttar Pradesh</h3><p><strong>  <p><b>Kashi Vishwanath Temple</b>:</p></strong></p>
+    <img src="images/uttar1.jpg" width="50%">
+    <p><b>Location</b>: Varanasi (Kashi), Uttar Pradesh, on the banks of the Ganga River.</p>
+    
+    <a href="uttarpradesh.html" target="_blank">View More →</a></div>
+  <div id="popup-wb" class="popup-box" style="top: 250px; left: 540px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>West Bengal</h3><p><strong> <p><b>Dakshineswar Kali Temple</b>:</p></strong></p>
+    <img src="images/west1.jpg" width="50%">
+    <p><b>Location</b>: On the eastern bank of the Hooghly River, near Kolkata.</p>
+    
+    <a href="westbengal.html" target="_blank">View More →</a></div>
+  <div id="popup-ut" class="popup-box" style="top: 150px; left: 320px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Uttarakhand</h3><p><strong>  <p><b>Kedarnath Temple (Uttarakhand)</b>:</p></strong></p>
+    <img src="images/uttark1.jpg" width="50%">
+    <p><b>Location</b>: Rudraprayag district, Uttarakhand, in the Garhwal Himalayas.</p>
+
+
+    <a href="uttarkhand.html" target="_blank">View More →</a></div>
+  <div id="popup-jk" class="popup-box" style="top: 50px; left: 200px;"><span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+    <h3>Jammu & Kashmir</h3><p><strong>  <p><b>Vaishno Devi Temple</b>:</p></strong></p>
+    <img src="images/jam1.jpg" width="50%">
+    <p><b>Location</b>: Situated in Katra, Jammu and Kashmir, on the Trikuta Hills at an elevation of approximately 1,585 meters.</p>
+    
+
+    <a href="jammu&kashmir.html" target="_blank">View More →</a></div>
+</div>
+
+
+<map name="india">
+  <div class="cirle" coords="166,357,16" title="Andhra Pradesh" href="#" onclick="document.getElementById('popup-ap').style.display='block'; return false;">
+  <area shape="rect" coords="405,137,359,162" title="Arunachal Pradesh" href="#" onclick="document.getElementById('popup-ar').style.display='block'; return false;">
+  <area shape="rect" coords="327,175,370,183" title="Assam" href="#" onclick="document.getElementById('popup-as').style.display='block'; return false;">
+  <area shape="rect" coords="247,176,278,203" title="Bihar" href="#" onclick="document.getElementById('popup-br').style.display='block'; return false;">
+  <area shape="poly" coords="215,229,243,237,202,298" title="Chhattisgarh" href="#" onclick="document.getElementById('popup-ct').style.display='block'; return false;">
+  <area shape="rect" coords="95,339,97,349" title="Goa" href="#" onclick="document.getElementById('popup-ga').style.display='block'; return false;">
+  <area shape="rect" coords="29,210,96,254" title="Gujarat" href="#" onclick="document.getElementById('popup-gj').style.display='block'; return false;">
+  <area shape="circle" coords="139,139,4" title="Haryana" href="#" onclick="document.getElementById('popup-hr').style.display='block'; return false;">
+  <area shape="circle" coords="152,96,9" title="Himachal Pradesh" href="#" onclick="document.getElementById('popup-hp').style.display='block'; return false;">
+  <area shape="rect" coords="241,215,273,235" title="Jharkhand" href="#" onclick="document.getElementById('popup-jh').style.display='block'; return false;">
+  <area shape="rect" coords="105,334,144,387" title="Karnataka" href="#" onclick="document.getElementById('popup-ka').style.display='block'; return false;">
+  <area shape="poly" coords="114,401,128,404,136,453" title="Kerala" href="#" onclick="document.getElementById('popup-kl').style.display='block'; return false;">
+  <area shape="rect" coords="119,210,192,247" title="Madhya Pradesh" href="#" onclick="document.getElementById('popup-mp').style.display='block'; return false;">
+  <area shape="rect" coords="89,277,139,303" title="Maharashtra" href="#" onclick="document.getElementById('popup-mh').style.display='block'; return false;">
+  <area shape="circle" coords="377,203,4" title="Manipur" href="#" onclick="document.getElementById('popup-mn').style.display='block'; return false;">
+  <area shape="rect" coords="326,188,354,195" title="Meghalaya" href="#" onclick="document.getElementById('popup-ml').style.display='block'; return false;">
+  <area shape="poly" coords="359,217,367,216,365,236" title="Mizoram" href="#" onclick="document.getElementById('popup-mz').style.display='block'; return false;">
+  <area shape="rect" coords="381,175,387,184" title="Nagaland" href="#" onclick="document.getElementById('popup-nl').style.display='block'; return false;">
+  <area shape="circle" coords="250,271,16" title="Odisha" href="#" onclick="document.getElementById('popup-or').style.display='block'; return false;">
+  <area shape="rect" coords="118,98,134,121" title="Punjab" href="#" onclick="document.getElementById('popup-pb').style.display='block'; return false;">
+  <area shape="poly" coords="63,160,129,157,70,196,135,196" title="Rajasthan" href="#" onclick="document.getElementById('popup-rj').style.display='block'; return false;">
+  <area shape="circle" coords="301,162,3" title="Sikkim" href="#" onclick="document.getElementById('popup-sk').style.display='block'; return false;">
+  <area shape="poly" coords="137,409,176,408,154,444" title="Tamil Nadu" href="#" onclick="document.getElementById('popup-tn').style.display='block'; return false;">
+  <area shape="poly" coords="165,285,152,333,195,312" title="Telangana" href="#" onclick="document.getElementById('popup-tg').style.display='block'; return false;">
+  <area shape="circle" coords="346,221,5" title="Tripura" href="#" onclick="document.getElementById('popup-tr').style.display='block'; return false;">
+  <area shape="rect" coords="165,156,231,195" title="Uttar Pradesh" href="#" onclick="document.getElementById('popup-up').style.display='block'; return false;">
+  <area shape="poly" coords="298,200,276,232,307,247" title="West Bengal" href="#" onclick="document.getElementById('popup-wb').style.display='block'; return false;">
+  <area shape="rect" coords="162,113,188,132" title="Uttarakhand" href="#" onclick="document.getElementById('popup-ut').style.display='block'; return false;">
+  <area shape="rect" coords="103,25,169,76" title="Jammu & Kashmir" href="#" onclick="document.getElementById('popup-jk').style.display='block'; return false;">
+
+</map>
+
+</body>
+</html>

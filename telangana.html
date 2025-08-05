@@ -1,0 +1,115 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Telangana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Yadadri Temple Section -->
+  <h3>Yadadri Narasimha Temple</h3>
+  <div class="image-row">
+    <img src="images/tel1.jpg" alt="Yadadri Narasimha Temple">
+    <img src="images/tel3.jpg" alt="Yadadri Narasimha Temple">
+  </div>
+
+  <p><b>Location:</b> Yadagirigutta, near Hyderabad, Telangana</p>
+  <p><b>Deity:</b> Lord Narasimha (incarnation of Vishnu), also called Yadagiri Lakshmi Narasimha Swamy</p>
+  <p><b>Architecture:</b> Recently renovated with stunning Dravidian architecture using black granite</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#yadadriModal">
+    More Info
+  </button>
+
+  <!-- Modal for Yadadri Temple -->
+  <div class="modal fade" id="yadadriModal" tabindex="-1" aria-labelledby="yadadriModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="yadadriModalLabel">Yadadri Narasimha Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Modern Renovation:</b> Rebuilt and expanded massively between 2016–2022 under the Telangana government</p>
+          <p><b>Spiritual Significance:</b> Considered a powerful temple for wish fulfillment and devotional healing</p>
+          <p><b>Structure:</b> Built on a hill with beautifully sculpted pillars, mandapams, and vimanas</p>
+          <p><b>Pilgrimage Site:</b> Popular temple attracting lakhs of devotees annually</p>
+          <p><b>Festival:</b> Brahmotsavam is the grand annual celebration</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Ramappa Temple Section -->
+  <h3 class="mt-5">Ramappa Temple</h3>
+  <div class="image-row">
+    <img src="images/tel2.jpg" alt="Ramappa Temple">
+    <img src="images/tel4.jpg" alt="Ramappa Temple">
+  </div>
+
+  <p><b>Location:</b> Palampet village, Mulugu district, Telangana</p>
+  <p><b>Deity:</b> Lord Shiva (as Ramalingeswara)</p>
+  <p><b>Built By:</b> Recherla Rudra, a Kakatiya general, in 1213 AD during Ganapati Deva’s reign</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#ramappaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Ramappa Temple -->
+  <div class="modal fade" id="ramappaModal" tabindex="-1" aria-labelledby="ramappaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="ramappaModalLabel">Ramappa Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>UNESCO World Heritage Site:</b> Recognized in 2021 for architectural brilliance</p>
+          <p><b>Architecture:</b> Built with sandbox technology (quake-resistant foundation), unique floating bricks used in the roof, intricate carvings on pillars and walls</p>
+          <p><b>Highlights:</b> Detailed sculpture work depicting scenes from Ramayana and Mahabharata</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Tamil Nadu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Meenakshi Temple Section -->
+  <h3>Meenakshi Temple</h3>
+  <div class="image-row">
+    <img src="images/tam1.jpg" alt="Meenakshi Temple">
+    <img src="images/tam3.jpg" alt="Meenakshi Temple">
+  </div>
+ 
+  <p><b>Location:</b> Madurai, Tamil Nadu</p>
+  <p><b>Deity:</b> Goddess Meenakshi (Parvati) and Lord Sundareshwarar (Shiva)</p>
+  <p><b>Famous For:</b> Towering gopurams and vibrant sculptures in Dravidian style</p>
+
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#meenakshiModal">
+    More Info
+  </button>
+
+  <!-- Modal for Meenakshi Temple -->
+  <div class="modal fade" id="meenakshiModal" tabindex="-1" aria-labelledby="meenakshiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="meenakshiModalLabel">Meenakshi Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Complex Size:</b> Covers 14 acres with 14 gopurams; tallest ~170 feet</p>
+          <p><b>Historical Era:</b> Originally from the 6th century CE, current structure mostly 12th–17th centuries</p>
+          <p><b>Unique Feature:</b> Celebrates female divinity with Meenakshi as the primary deity</p>
+          <p><b>Festival:</b> Meenakshi Thirukalyanam during the Chithirai Festival (April)</p>
+          <p><b>Cultural Role:</b> Major spiritual and cultural center in South India</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Brihadeeswarar Temple Section -->
+  <h3 class="mt-5">Brihadeeswarar Temple</h3>
+  <div class="image-row">
+    <img src="images/tam2.jpg" alt="Brihadeeswarar Temple">
+    <img src="images/tam4.jpg" alt="Brihadeeswarar Temple">
+  </div>
+
+  <p><b>Location:</b> Thanjavur, Tamil Nadu</p>
+  <p><b>Deity:</b> Lord Shiva</p>
+  <p><b>Also Known As:</b> Peruvudaiyar Kovil or Big Temple</p>
+
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#brihadeeswararModal">
+    More Info
+  </button>
+
+  <!-- Modal for Brihadeeswarar Temple -->
+  <div class="modal fade" id="brihadeeswararModal" tabindex="-1" aria-labelledby="brihadeeswararModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="brihadeeswararModalLabel">Brihadeeswarar Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built By:</b> Raja Raja Chola I in 1010 AD</p>
+          <p><b>UNESCO Status:</b> Part of the Great Living Chola Temples</p>
+          <p><b>Architecture:</b> Masterpiece of Chola style; Vimana ~66 meters tall</p>
+          <p><b>Nandi Statue:</b> One of India’s largest monolithic Nandis (~6 meters long)</p>
+          <p><b>Unique Feature:</b> The temple tower's shadow never falls on the ground at noon</p>
+          <p><b>Cultural Importance:</b> Represents Tamil heritage, temple engineering, and devotion</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

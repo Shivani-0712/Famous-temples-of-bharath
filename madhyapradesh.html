@@ -1,0 +1,119 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Madhya Pradesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Mahakaleshwar Temple Section -->
+  <h3>Mahakaleshwar Temple</h3>
+  <div class="image-row">
+    <img src="images/mad1.jpg" alt="Mahakaleshwar Temple">
+    <img src="images/mad3.jpg" alt="Mahakaleshwar Temple">
+  </div>
+
+  <p><b>Location:</b> Ujjain city, Madhya Pradesh</p>
+  <p><b>Deity:</b> Lord Shiva (as Mahakaleshwar – the "Lord of Time/Death")</p>
+  <p><b>Significance:</b> One of the 12 Jyotirlingas in India, only Dakshinamukhi Jyotirlinga (facing south), associated with tantric worship</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#mahakaleshwarModal">
+    More Info
+  </button>
+
+  <!-- Modal for Mahakaleshwar -->
+  <div class="modal fade" id="mahakaleshwarModal" tabindex="-1" aria-labelledby="mahakaleshwarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="mahakaleshwarModalLabel">Mahakaleshwar Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Ritual Highlight:</b> Bhasma Aarti – unique ritual using sacred ash at dawn</p>
+          <p><b>Mythology:</b> Shiva took the fierce Mahakal form to protect Ujjain</p>
+          <p><b>Architecture:</b> Traditional Maratha-style temple with multi-tiered spires</p>
+          <p><b>Festivals:</b> Maha Shivaratri, Shravan month, and Nag Panchami</p>
+          <p><b>Location Detail:</b> Near the holy Shipra River, in the heart of Ujjain city</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Khajuraho Temples Section -->
+  <h3 class="mt-5">Khajuraho Temples</h3>
+  <div class="image-row">
+    <img src="images/mad2.jpg" alt="Khajuraho Temples">
+    <img src="images/mad4.jpg" alt="Khajuraho Temples">
+  </div>
+
+  <p><b>Location:</b> Khajuraho, Chhatarpur district, Madhya Pradesh</p>
+  <p><b>Famous For:</b> Stunning Nagara-style architecture and intricate erotic sculptures</p>
+  <p><b>Deities:</b> Temples dedicated to Hindu (Shiva, Vishnu) and Jain deities</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#khajurahoModal">
+    More Info
+  </button>
+
+  <!-- Modal for Khajuraho Temples -->
+  <div class="modal fade" id="khajurahoModal" tabindex="-1" aria-labelledby="khajurahoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="khajurahoModalLabel">Khajuraho Temples Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built By:</b> Chandela dynasty (10th–12th century)</p>
+          <p><b>Cultural Festival:</b> Khajuraho Dance Festival – classical dance performances amid the temples</p>
+          <p><b>Main Road Route:</b> Ujjain to Khajuraho</p>
+          <p><b>Distance:</b> ~450–500 km (approx. 9–10 hours by car/bus)</p>
+          <p><b>Best Road Route:</b> Ujjain → Bhopal → Sagar → Khajuraho</p>
+          <p><b>Road Condition:</b> Generally good, with highways and scenic stretches</p>
+          <p><b>Travel Tip:</b> Early morning drive is ideal; stay hydrated and watch for rural traffic</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

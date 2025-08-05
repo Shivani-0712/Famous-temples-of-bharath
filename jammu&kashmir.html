@@ -1,0 +1,117 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples of Jammu & Kashmir</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Vaishno Devi Temple Section -->
+  <h3>Vaishno Devi Temple</h3>
+  <div class="image-row">
+    <img src="images/jam1.jpg" alt="Vaishno Devi Temple">
+    <img src="images/jam3.jpg" alt="Vaishno Devi Temple">
+  </div>
+
+  <p><b>Location:</b> Trikuta Hills, Katra, Jammu and Kashmir (approx. 1,585 meters elevation)</p>
+  <p><b>Deity:</b> Goddess Vaishno Devi (Mahakali, Mahalakshmi, Mahasaraswati)</p>
+  <p><b>Significance:</b> One of the 108 Shakti Peethas; believed to be where the skull of Sati fell</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#vaishnoModal">
+    More Info
+  </button>
+
+  <!-- Modal for Vaishno Devi -->
+  <div class="modal fade" id="vaishnoModal" tabindex="-1" aria-labelledby="vaishnoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="vaishnoModalLabel">Vaishno Devi Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Pilgrimage:</b> 12-km trek from Katra; attracts millions yearly, especially during Navaratri</p>
+          <p><b>Sanctum:</b> Three natural rock formations (Pindies) representing the three goddesses</p>
+          <p><b>Administration:</b> Managed by Shri Mata Vaishno Devi Shrine Board (SMVDSB) since 1986</p>
+          <p><b>Festivals:</b> Celebrated grandly during Navaratri and Diwali</p>
+          <p><b>Legends:</b> Associated with Mahabharata—Arjuna worshipped here before the Kurukshetra war</p>
+          <p><b>Access:</b> Reachable via trekking, ponies, palanquins, or helicopter</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Amarnath Cave Temple Section -->
+  <h3 class="mt-5">Amarnath Cave Temple</h3>
+  <div class="image-row">
+    <img src="images/jam2.jpg" alt="Amarnath Cave Temple">
+    <img src="images/jam4.jpg" alt="Amarnath Cave Temple">
+  </div>
+
+  <p><b>Location:</b> Anantnag district, Jammu and Kashmir (approx. 3,888 meters altitude)</p>
+  <p><b>Deity:</b> Lord Shiva (naturally forming ice Shiva Lingam)</p>
+  <p><b>Significance:</b> Site where Shiva revealed the secret of immortality (Amar Katha)</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#amarnathModal">
+    More Info
+  </button>
+
+  <!-- Modal for Amarnath -->
+  <div class="modal fade" id="amarnathModal" tabindex="-1" aria-labelledby="amarnathModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="amarnathModalLabel">Amarnath Cave Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Pilgrimage:</b> Annual Yatra during July–August; challenging trek attracts thousands</p>
+          <p><b>Access Routes:</b> Via Pahalgam route (45 km) or Baltal route (14 km)</p>
+          <p><b>Mythology:</b> Shiva narrated Amar Katha here; immortal pigeons are believed to be spotted</p>
+          <p><b>Administration:</b> Managed by the Shri Amarnathji Shrine Board</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

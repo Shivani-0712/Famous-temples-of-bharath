@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Goa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Shantadurga Temple Section -->
+  <h3>Shantadurga Temple</h3>
+  <div class="image-row">
+    <img src="images/goa1.jpg" alt="Shantadurga Temple">
+    <img src="images/goa3.jpg" alt="Shantadurga Temple">
+  </div>
+
+  <p><b>Location:</b> Kavalem village, Ponda Taluka, ~33 km from Panaji</p>
+  <p><b>Deity:</b> Goddess Shantadurga (peaceful form of Durga)</p>
+  <p><b>Architecture:</b> Traditional Goan style with Deepstambha and sacred Kunda</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#shantadurgaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Shantadurga -->
+  <div class="modal fade" id="shantadurgaModal" tabindex="-1" aria-labelledby="shantadurgaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="shantadurgaModalLabel">Shantadurga Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Historical Background:</b> Rebuilt between 1730 and 1738 after Portuguese destruction; renovated in 1966</p>
+          <p><b>Spiritual Significance:</b> Major pilgrimage site for Goud Saraswat Brahmins</p>
+          <p><b>Local Name:</b> Known as “Santeri” for her serene nature</p>
+          <p><b>Festivals:</b> Sharad Navratri, Vasant Panchami, and annual Jatraustav</p>
+          <p><b>Associated Institution:</b> Linked with Kavale Math, an important spiritual center</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kavlem Mangeshi Temple Section -->
+  <h3 class="mt-5">Kavlem Mangeshi Temple</h3>
+  <div class="image-row">
+    <img src="images/goa2.jpg" alt="Kavlem Mangeshi Temple">
+    <img src="images/goa4.jpg" alt="Kavlem Mangeshi Temple">
+  </div>
+  
+  <p><b>Location:</b> Priol, Ponda Taluka, Goa (~21 km from Panaji)</p>
+  <p><b>Deity:</b> Lord Mangesh (form of Lord Shiva)</p>
+  <p><b>Architecture:</b> Seven-storey Deepstambha and sacred tank</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#mangeshiModal">
+    More Info
+  </button>
+
+  <!-- Modal for Mangeshi Temple -->
+  <div class="modal fade" id="mangeshiModal" tabindex="-1" aria-labelledby="mangeshiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="mangeshiModalLabel">Kavlem Mangeshi Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Historical Background:</b> Moved from Cortalim to Priol in 1560 to avoid Portuguese attacks</p>
+          <p><b>Festivals:</b> Celebrates Mahashivaratri, Magha Poornima, Navaratri, and Jatra</p>
+          <p><b>Cultural Significance:</b> Revered by Goud Saraswat Brahmins; linked with the Mangeshkar family</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

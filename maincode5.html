@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Map</title>
+  <style>
+    .popup {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      z-index: 1000;
+      width: 200px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Example clickable state area -->
+<img src="india-map.png" usemap="#indiaMap" alt="India Map">
+<map name="indiaMap">
+  <area shape="rect" coords="34,44,70,80" alt="Karnataka" onclick="showPopup(event, 'karnataka.html')">
+</map>
+
+<!-- Popup -->
+<div id="popup" class="popup" onclick="redirectPopup()">
+  <p>Famous Temple: Virupaksha Temple</p>
+  <a href="#" id="viewMoreLink">View More Info</a>
+</div>
+
+<script>
+  let popupTimer;
+  let redirectUrl = "";
+
+  function showPopup(event, url) {
+    const popup = document.getElementById("popup");
+    redirectUrl = url;
+
+    popup.style.left = event.pageX + 'px';
+    popup.style.top = event.pageY + 'px';
+    popup.style.display = 'block';
+
+    // Update view more link
+    document.getElementById("viewMoreLink").href = url;
+
+    clearTimeout(popupTimer);
+    popupTimer = setTimeout(() => {
+      popup.style.display = 'none';
+    }, 10000); // stays for 10 seconds
+  }
+
+  function redirectPopup() {
+    window.location.href = redirectUrl;
+  }
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>famous temples of india</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #FF9933, #FF5733);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.1)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+            opacity: 0.1;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            position: relative;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+        }
+        
+        .map-container {
+            position: relative;
+            width: 100%;
+            margin: 30px 0;
+
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .india-map {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-area {
+            position: absolute;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 5;
+            background-color:transparent; 
+            border-radius: 4px;
+            opacity: 1;
+        }
+        
+        .hover-area:hover {
+            opacity: 1;
+        }
+        
+        .popup {
+            display: none;
+      position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            z-index: 1000;
+            width: 200px;
+            cursor: pointer;
+            position: absolute;
+            width: 280px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            padding: 20px;
+            z-index: 100;
+            display: none;
+            animation: fadeIn 0.2s ease-out;
+            border: 1px solid #eee;
+            pointer-events: none; /* Prevent popup from interfering with hover */
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .popup h3 {
+            margin-top: 0;
+            color: #FF5733;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .popup img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            border: 1px solid #eee;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #333, #222);
+            color: white;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        
+        .dance-overview {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border-left: 4px solid #FF9933;
+        }
+        
+        .dance-overview h2 {
+            margin-top: 0;
+            color: #FF5733;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .popup {
+                width: 90%;
+                left: 5% !important;
+                right: 5% !important;
+                position: fixed;
+                top: 50% !important;
+                transform: translateY(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        
+    
+        
+        <div class="map-container">
+            <img src="india1.jpg" alt="India Map" class="india-map" id="indiaMap" onerror="this.src='india1.jpg'">
+       
+            <!-- Hover areas for each state -->
+            <div class="hover-area" style="top: 79%; left: 35%; width: 8%; height: 12%;" data-dance="MeenakshiTemple" data-url="tamilnadu.html"></div> <!-- Tamil Nadu -->
+            <div class="hover-area" style="top: 27%; left: 31%; width: 5%; height: 6%;" data-dance="BhuteshwarMahadevTemple" data-url="haryana.html"></div> <!-- Tamil Nadu -->
+            <div class="hover-area" style="top: 69%; left: 25%; width: 3%; height: 3%;" data-dance="ShantadurgaTemple" data-url="goa.html"></div> <!-- Goa -->
+            <div class="hover-area" style="top: 23%; left: 39%; width: 5%; height: 6%;" data-dance="KedarnathTemple" data-url="uttarkhand.html"></div> <!-- UttaraKhand -->
+            <div class="hover-area" style="top: 21%; left: 28%; width: 6%; height: 6%;" data-dance="DurgianaTemple" data-url="punjab.html"></div> <!-- Panjab -->
+            <div class="hover-area" style="top: 18%; left: 33%; width: 6%; height: 6%;" data-dance="BaijnathTemple" data-url="himachalpradesh.html"></div> <!-- Himachal Pradesh -->
+            <div class="hover-area" style="top: 30%; left: 38%; width: 13%; height: 11%;" data-dance="KashiVishwanathTemple" data-url="uttarpradesh.html"></div> <!-- Uttar Pradesh -->
+            <div class="hover-area" style="top: 79%; left: 29%; width: 5%; height: 12%;" data-dance="SabarimalaTemple" data-url="kerala.html"></div> <!-- Kerala -->
+            <div class="hover-area" style="top: 66%; left: 35%; width: 10%; height: 12%;" data-dance="TirumalaVenkateswaraTemple" data-url="andhrapradesh.html"></div> <!-- Andhra Pradesh -->
+            <div class="hover-area" style="top: 50%; left: 52%; width: 12%; height: 10%;" data-dance="JagannathTemple" data-url="odisha.html"></div> <!-- Odisha -->
+            <div class="hover-area" style="top: 39%; left: 79%; width: 4%; height: 4%;" data-dance="ShriGovindajeeTemple" data-url="manipur.html"></div> <!-- Manipur -->
+            <div class="hover-area" style="top: 35%; left: 70%; width: 10%; height: 3%;" data-dance="KamakhyaTemple" data-url="assam.html"></div> <!-- Assam -->
+            <div class="hover-area" style="top: 7%; left: 27%; width: 16%; height: 12%;" data-dance="VaishnoDeviTemple" data-url="jammu&kashmir.html"></div> <!-- Jammu & Kashmir -->
+            <div class="hover-area" style="top: 58%; left: 36%; width: 8%; height: 10%;" data-dance="YadadriNarasimhaTemple" data-url="telangana.html"></div> <!-- Telangana -->
+            <div class="hover-area" style="top: 66%; left: 28%; width: 8%; height: 15%;" data-dance="KukkeSubramanyaTemple" data-url="karnataka.html"></div> <!-- Karnataka -->
+            <div class="hover-area" style="top: 53%; left: 21%; width: 16%; height: 13%;" data-dance="SiddhivinayakTemple" data-url="maharastra.html"></div> <!-- Maharashtra -->
+            <div class="hover-area" style="top: 48%; left: 45%; width: 7%; height: 12%;" data-dance="BhoramdeoTemple" data-url="chattisgarh.html"></div> <!-- Chhattisgarh -->
+            <div class="hover-area" style="top: 42%; left: 31%; width: 16%; height: 10%;" data-dance="MahakaleshwarTemple" data-url="madhyapradesh.html"></div> <!-- Madhya Pradesh -->
+            <div class="hover-area" style="top: 43%; left: 12%; width: 16%; height: 10%;" data-dance="SomnathTemple" data-url="gujarat.html"></div> <!-- Gujarat -->
+            <div class="hover-area" style="top: 32%; left: 15%; width: 23%; height: 10%;" data-dance="BrahmaTemple" data-url="rajasthan.html"></div> <!-- Rajasthan -->
+            <div class="hover-area" style="top: 43%; left: 54%; width: 8%; height: 6%;" data-dance="BaidyanathTemple" data-url="jharkhand.html"></div> <!-- Jharkhand -->
+            <div class="hover-area" style="top: 44%; left: 61%; width: 7%; height: 6%;" data-dance="DakshineswarKaliTemple" data-url="westbengal.html"></div> <!-- West Bengal -->
+            <div class="hover-area" style="top: 37%; left: 54%; width: 9%; height: 5%;" data-dance="MahabodhiTemple" data-url="bihar.html"></div> <!-- Bihar -->
+            <div class="hover-area" style="top: 43%; left: 77%; width: 4%; height: 6%;" data-dance="SolomonsTemple" data-url="mizoram.html"></div> <!-- Mizoram -->
+            <div class="hover-area" style="top: 42%; left: 73%; width: 3%; height: 5%;" data-dance="BhuvaneswariTemple" data-url="tripura.html"></div> <!-- Tripura -->
+            <div class="hover-area" style="top: 38%; left: 69%; width: 7%; height: 3%;" data-dance="NartiangDurgaTemple" data-url="meghalaya.html"></div> <!-- Meghalaya -->
+            <div class="hover-area" style="top: 35%; left: 81%; width: 3%; height: 3%;" data-dance="DimapurKalibariTemple" data-url="nagaland.html"></div> <!-- Nagaland -->
+            <div class="hover-area" style="top: 25%; left: 74%; width: 17%; height:9%;" data-dance="ParashuramKundTemple" data-url="arunachalpradesh.html"></div> <!-- Arunachal Pradesh -->
+            <div class="hover-area" style="top: 32%; left: 65%; width: 2%; height: 5%;" data-dance="KirateshwarMahadevTemple" data-url="sikkim.html"></div> <!-- Sikkim -->
+
+            <!-- Popup Container -->
+            <div class="popup" id="dancePopup">
+                <h3 id="popupTitle">Dance Form</h3>
+                <img id="popupImage" src="" alt="Dance Form Image">
+                <p id="popupDescription">Description will appear here.</p>
+                <p id="popupOrigin"><strong>Origin:</strong> <span></span></p>
+            </div>
+        </div>
+       
+            
+    </div>
+    <!-- Example clickable state area -->
+<img src="india1.jpg" usemap="#indiaMap" alt="India Map">
+<map name="indiaMap">
+  <area shape="rect" coords="34,44,70,80" alt="Karnataka" onclick="showPopup(event, 'karnataka.html')">
+</map>
+
+<!-- Popup -->
+<div id="popup" class="popup" onclick="redirectPopup()">
+  <p>Famous Temple: Virupaksha Temple</p>
+  <a href="#" id="viewMoreLink">View More Info</a>
+</div>
+
+<script>
+  let async (params) => {
+    popupTimer
+  };
+  let redirectUrl = "";
+
+  function showPopup(event, url) {
+    const popup = document.getElementById("popup");
+    redirectUrl = url;
+
+    popup.style.left = event.pageX + 'px';
+    popup.style.top = event.pageY + 'px';
+    popup.style.display = 'block';
+
+    // Update view more link
+    document.getElementById("viewMoreLink").href = url;
+
+    clearTimeout(popupTimer);
+    popupTimer = setTimeout(() => {
+      popup.style.display = 'none';
+    }, 10000); // stays for 10 seconds
+  }
+
+  function redirectPopup() {
+    window.location.href = redirectUrl;
+  }
+</script>
+    
+    
+    
+    <script>
+        // Dance form data with placeholder images
+        const danceForms = {
+            MeenakshiTemple: {
+                title: "MeenakshiTemple",
+                image: "images/tam1.jpg",
+                description: "Deity: Goddess Meenakshi (Parvati) and Lord Sundareshwarar (Shiva)",
+                origin: "TamilNadu"
+            },
+            KashiVishwanathTemple: {
+                title: "KashiVishwanathTemple",
+                image: "images/uttar1.jpg",
+                description:"Deity: Lord Shiva (as Vishwanath, “Lord of the Universe”)",
+                origin: "UttarPradesh"
+            },
+            SabarimalaTemple: {
+                title:"SabarimalaTemple",
+                image:"images/kerala1.jpg",
+                description:"Deity: Lord Ayyappa (son of Shiva and Mohini)",
+                origin: "Kerala"
+            },
+            ShantadurgaTemple: {
+                title: "ShantadurgaTemple",
+                image: "images/goa1.jpg",
+                description: "Deity: Goddess Shantadurga (peaceful form of Durga)",
+                origin: "Goa"
+            },
+            TirumalaVenkateswaraTemple: {
+                title: "TirumalaVenkateswaraTemple",
+                image: "images/andra1.jpg",
+                description: "Deity:Lord Venkateswara (form of Vishnu)",
+                origin: "Andhra Pradesh"
+            },
+            JagannathTemple: {
+                title: "JagannathTemple",
+                image: "images/odisha1.jpg",
+                description: "Deities: Lord Jagannath, Subhadra, and Balabhadra",
+                origin: "Odisha"
+            },
+            ShriGovindajeeTemple: {
+                title: "ShriGovindajeeTemple",
+                image: "images/mani1.jpg",
+                description: "Deity: Lord Govindajee (form of Krishna), with Radha, Balabhadra, and Subhadra",
+                origin: "Manipur"
+            },
+            KamakhyaTemple: {
+                title: "KamakhyaTemple",
+                image: "images/assam1.jpg",
+                description: "Deity: Goddess Kamakhya (form of Shakti)",
+                origin: "Assam"
+            },
+            VaishnoDeviTemple: {
+                title: "VaishnoDeviTemple",
+                image:"images/jam1.jpg",
+                description: "Deity:Goddess Vaishno Devi (Mahakali, Mahalakshmi, Mahasaraswati)",
+                origin: "Jammu&Kashmir"
+            },
+            YadadriNarasimhaTemple: {
+                title: "YadadriNarasimhaTemple",
+                image: "images/tel1.jpg",
+                description: "Deity: Lord Narasimha (incarnation of Vishnu), also called Yadagiri Lakshmi Narasimha Swamy",
+                origin: "Telangana"
+            },
+            KukkeSubramanyaTemple: {
+            title: "KukkeSubramanyaTemple",
+            image: "images/K1.jpg",
+            description: "Deity:Lord Subramanya (Kartikeya/Murugan), worshipped with Vasuki (serpent)",
+            origin: "Karnataka"
+            },
+            SiddhivinayakTemple: {
+            title: "SiddhivinayakTemple",
+            image: "images/mah1.jpg",
+            description: "Deity:Lord Ganesha",
+            origin: "Maharashtra"
+            },
+            BhoramdeoTemple: {
+            title: "BhoramdeoTemple",
+            image: "images/cha1.jpg",
+            description: "Deity: Lord Shiva (as Bhoramdeo)",
+            origin: "Chhattisgarh"
+            },
+            MahakaleshwarTemple: {
+            title: "MahakaleshwarTemple",
+            image: "images/mad1.jpg", // Example image URL – replace if needed
+            description: " Deity: Lord Shiva ",
+             origin: "Madhya Pradesh"
+            },
+            SomnathTemple: {
+            title: "SomnathTemple",
+            image: "images/gujarat1.jpg", // Example image
+            description: "Deity: Lord Shiva (Somnath – The Lord of the Moon)",
+            origin: "Gujarat"
+            },
+            BrahmaTemple: {
+            title: "BrahmaTemple",
+            image: "images/raj1.jpg", // Example image
+            description: "Deity: Lord Brahma (the Creator in Hindu Trinity)",
+            origin: "Rajasthan"
+            },
+            BaidyanathTemple: {
+             title: "BaidyanathTemple",
+             image: "images/jhar1.jpg", // Example image
+             description: "Deity: Lord Shiva (as Baidyanath – the “Healer”)",
+             origin: "Jharkhand"
+             },
+             DakshineswarKaliTemple: {
+             title: "DakshineswarKaliTemple",
+             image: "images/west1.jpg", // Example image
+             description: "  Deity: Goddess Bhavatarini, a form of Kali",
+             origin: "West Bengal"
+            },
+            MahabodhiTemple: {
+            title: "MahabodhiTemple",
+            image: "images/bihar1.jpg", // Example image
+            description: "Deity: Not a deity-based temple; it is a Buddhist pilgrimage site",
+            origin: "Bihar"
+            },
+            BhuteshwarMahadevTemple: {
+            title: "BhuteshwarMahadevTemple",
+            image: "images/har1.jpg",
+            description:"  Deity:Lord Shiva, revered as Bhuteshwar Mahadev",
+            origin:"Haryana"
+        },
+            SolomonsTemple: {
+            title: "SolomonsTemple",
+            image: "images/mizoram1.jpg", // Bamboo dance image
+            description: "Deity/Focus: Dedicated to Jesus Christ Christian Church",
+            origin: "Mizoram"
+            },
+            BhuvaneswariTemple: {
+            title: "BhuvaneswariTemple",
+            image: "images/tri1.jpg",
+            description: "  Deity:Goddess Bhuvaneswari, a form of Durga/Parvati",
+            origin: "Tripura"
+            },
+            NartiangDurgaTemple: {
+            title: "NartiangDurgaTemple",
+            image: "images/megha1.jpg",
+            description: "  Deity: Goddess Durga",
+            origin: "Meghalaya"
+            },
+            DimapurKalibariTemple: {
+            title: "DimapurKalibariTemple",
+            image: "images/naga1.jpg",
+            description: "Dedicated to:Goddess Kali",
+    origin: "Nagaland"
+},
+ParashuramKundTemple: {
+    title: "ParashuramKundTemple",
+    image: "images/arun1.jpg",
+    description: "Deity/Association: Associated with Sage Parashuram, the sixth avatar of Vishnu",
+    origin: "Arunachal Pradesh"
+},
+KirateshwarMahadevTemple: {
+    title: "KirateshwarMahadevTemple",
+    image: "images/sikkim1.jpg",
+    description: "Deity: Lord Shiva (Kirateshwar form)",
+    origin: "Sikkim"
+},
+BaijnathTemple:{
+    title: "BaijnathTemple",
+    image: "images/him1.jpg",
+    description:"Deity:Lord Shiva as Vaidyanath, the Lord of Physicians" ,
+    origin: "Himachal Pradesh"
+},
+KedarnathTemple: {
+    title: "KedarnathTemple",
+    image: "images/uttark1.jpg",
+    description: "Deity: Lord Shiva (one of the 12 Jyotirlingas)",
+    origin: "Uttarakhand"
+},
+DurgianaTemple: {
+    title: "DurgianaTemple",
+    image: "images/pun1.jpg",
+    description: "  Dedicated to:Goddess Durga (also Lakshmi and Narayan)",    
+    origin: "Punjab"
+}
+};
+        
+        // Get DOM elements
+        const hoverAreas = document.querySelectorAll('.hover-area');
+        const popup = document.getElementById('dancePopup');
+        const popupTitle = document.getElementById('popupTitle');
+        const popupImage = document.getElementById('popupImage');
+        const popupDescription = document.getElementById('popupDescription');
+        const popupOrigin = document.querySelector('#popupOrigin span');
+        
+        const indiaMap = document.getElementById('indiaMap');
+        
+        // Add fallback for images
+        popupImage.onerror = function() {
+            this.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23f0f0f0"><rect width="100" height="100"/><text x="50" y="50" font-family="Arial" font-size="10" text-anchor="middle" fill="%23999">Image not available</text></svg>';
+        };
+        
+        // Function to position popup near hover area
+        function positionPopup(area) {
+            const mapRect = document.querySelector('.map-container').getBoundingClientRect();
+            const areaRect = area.getBoundingClientRect();
+            
+            // Calculate center of hover area
+            const centerX = areaRect.left - mapRect.left + (areaRect.width / 2);
+            const centerY = areaRect.top - mapRect.top + (areaRect.height / 2);
+            
+            // Adjust position to prevent overflow
+            let left = centerX;
+            let top = centerY;
+            
+            if (left > mapRect.width / 2) {
+                left -= 300; // position to the left
+            } else {
+                left += 20; // position to the right
+            }
+            
+            if (top > mapRect.height / 2) {
+                top -= 220; // position above
+            } else {
+                top += 20; // position below
+            }
+            
+            // Ensure popup stays within map container
+            left = Math.max(20, Math.min(left, mapRect.width - 320));
+            top = Math.max(20, Math.min(top, mapRect.height - 320));
+            
+            popup.style.left = left + 'px';
+            popup.style.top = top + 'px';
+        }
+        
+        // Add hover events to each area
+        hoverAreas.forEach(area => {
+            area.addEventListener('mouseenter', function() {
+                const danceForm = this.getAttribute('data-dance');
+                const data = danceForms[danceForm];
+                
+                // Set popup content
+                popupTitle.textContent = data.title;
+                popupImage.src = data.image;
+                popupImage.alt = data.title;
+                popupDescription.textContent = data.description;
+                popupOrigin.textContent = data.origin;
+                
+                // Position and show popup
+                positionPopup(this);
+                popup.style.display = 'block';
+            });
+            
+            area.addEventListener('mouseleave', function() {
+                popup.style.display = 'none';
+            });
+             // New: handle click to open dance page
+    area.addEventListener('click', function () {
+        const url = this.getAttribute('data-url');
+        if (url) {
+            window.open(url, '_blank');
+        }
+    });
+        });
+       
+        
+        // Hide popup when mouse leaves map container
+        document.querySelector('.map-container').addEventListener('mouseleave', function() {
+            popup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

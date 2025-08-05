@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Punjab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Durgiana Temple Section -->
+  <h3>Durgiana Temple – Amritsar</h3>
+  <div class="image-row">
+    <img src="images/pun1.jpg" alt="Durgiana Temple">
+    <img src="images/pun3.jpg" alt="Durgiana Temple ">
+  </div>
+  
+  <p><b>Location:</b> Amritsar, near the Golden Temple</p>
+  <p><b>Dedicated to:</b> Goddess Durga (also Lakshmi and Narayan)</p>
+  <p><b>Architecture:</b> Resembles the Golden Temple, surrounded by a holy tank</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#durgianaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Durgiana -->
+  <div class="modal fade" id="durgianaModal" tabindex="-1" aria-labelledby="durgianaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="durgianaModalLabel">Durgiana Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Also Known As:</b> Lakshmi Narayan Temple or Silver Temple (due to silver doors)</p>
+          <p><b>Built In:</b> 1908 by Harsai Mal Kapoor</p>
+          <p><b>Spiritual Importance:</b> Major Hindu pilgrimage site in Punjab</p>
+          <p><b>Festivals Celebrated:</b> Navratri, Dussehra, Diwali</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mata Mansa Devi Temple Section -->
+  <h3 class="mt-5">Mata Mansa Devi Temple – Panchkula</h3>
+  <div class="image-row">
+    <img src="images/pun2.jpg" alt="Mata Mansa Devi Temple ">
+    <img src="images/pun4.jpg" alt="Mata Mansa Devi Temple  ">
+  </div>
+
+  <p><b>Location:</b> Panchkula (near Chandigarh), Haryana</p>
+  <p><b>Dedicated to:</b> Goddess Mansa Devi (form of Shakti)</p>
+  <p><b>Situated at:</b> Foothills of the Shivalik range</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#mansaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Mansa Devi -->
+  <div class="modal fade" id="mansaModal" tabindex="-1" aria-labelledby="mansaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="mansaModalLabel">Mata Mansa Devi Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built In:</b> 1815–1816 by Maharaja Gopal Singh of Mani Majra</p>
+          <p><b>Spiritual Belief:</b> Fulfills wishes (“Mansa” means wish/desire)</p>
+          <p><b>Major Festival:</b> Navratri Mela – held twice a year with massive crowds</p>
+          <p><b>Temple Complex:</b> Expansive area with scenic views</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

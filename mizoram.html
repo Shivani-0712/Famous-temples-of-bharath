@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temples of Mizoram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <style>
+    .image-row {
+      display: flex;
+      gap: 10px; /* optional: space between images */
+      justify-content: center; /* optional: center the images horizontally */
+      align-items: center; /* optional: vertically align */
+    }
+  
+    .image-row img {
+      width: 300px; /* adjust width as needed */
+      height: auto;
+      border-radius: 8px; /* optional: rounded corners */
+    }
+  </style>
+  <body>
+  
+  <div class="container text-center my-5">
+  
+    <!-- Solomon's Temple Section -->
+    <h3>Solomon’s Temple</h3>
+    <div class="image-row">
+      <img src="images/mizoram1.jpg" alt="Solomon’s Temple">
+      <img src="images/mizoram3.jpg" alt="Solomon’s Temple">
+    </div>
+    
+    <p><b>Location:</b> Chawlhhmun, Aizawl, Mizoram</p>
+    <p><b>Deity/Focus:</b> Dedicated to Jesus Christ – Christian Church</p>
+    <p><b>Built By:</b> Khuangtuaha Pawl (non-denominational Christian group)</p>
+  
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#solomonModal">
+      More Info
+    </button>
+  
+    <!-- Modal for Solomon's Temple -->
+    <div class="modal fade" id="solomonModal" tabindex="-1" aria-labelledby="solomonModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h5 class="modal-title" id="solomonModalLabel">Solomon’s Temple Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body text-start">
+            <p><b>Construction:</b> Started in 1996 and inaugurated in 2017</p>
+            <p><b>Architecture:</b> Inspired by the biblical Solomon’s Temple; white marble-like façade, tall towers, prayer halls, open courtyard, and biblical inscriptions</p>
+            <p><b>Significance:</b> Major religious and tourist site; accommodates 2,000 inside and 10,000 outside</p>
+            <p><b>Unique Feature:</b> Combines biblical architecture with Mizo design sensibilities</p>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <!-- Khuangchera Puk Section -->
+    <h3 class="mt-5">Khuangchera Puk (Cave Temple)</h3>
+    <div class="image-row">
+      <img src="images/mizoram2.jpg" alt="Khuangchera Puk">
+      <img src="images/mizoram4.jpg" alt="Khuangchera Puk">
+    </div>
+    
+    <p><b>Location:</b> Near Ailawng village, close to Reiek, Mizoram</p>
+    <p><b>Name Origin:</b> Named after legendary warrior Khuangchera</p>
+    <p><b>Type:</b> Natural cave; not a formal temple</p>
+  
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#khuangcheraModal">
+      More Info
+    </button>
+  
+    <!-- Modal for Khuangchera Puk -->
+    <div class="modal fade" id="khuangcheraModal" tabindex="-1" aria-labelledby="khuangcheraModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h5 class="modal-title" id="khuangcheraModalLabel">Khuangchera Puk Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body text-start">
+            <p><b>Historical Significance:</b> Associated with Mizo folklore and bravery; believed to be a hideout or sacred space</p>
+            <p><b>Tourist Attraction:</b> Popular for trekking and adventure; surrounded by scenic Reiek Hills</p>
+            <p><b>Cultural Importance:</b> Reflects tribal legends and heritage; respected as a cultural site</p>
+            <p><b>Worship:</b> No formal worship; serves as a cultural landmark rather than religious shrine</p>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  

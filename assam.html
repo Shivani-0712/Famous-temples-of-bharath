@@ -1,0 +1,118 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Assam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Kamakhya Temple Section -->
+  <h3>Kamakhya Temple</h3>
+  <div class="image-row">
+    <img src="images/assam1.jpg" alt="Kamakhya Temple">
+    <img src="images/assam3.jpg" alt="Kamakhya Temple">
+  </div>
+
+  <p><b>Location:</b> Nilachal Hill, Guwahati, Assam</p>
+  <p><b>Deity:</b> Goddess Kamakhya (form of Shakti)</p>
+  <p><b>Architecture:</b> Blend of Nagara and local styles, with beehive-shaped shikhara</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#kamakhyaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Kamakhya -->
+  <div class="modal fade" id="kamakhyaModal" tabindex="-1" aria-labelledby="kamakhyaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="kamakhyaModalLabel">Kamakhya Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> One of the 51 Shakti Peethas; symbol of feminine power and fertility</p>
+          <p><b>Legend:</b> Believed to be the spot where Sati’s womb and genitals fell, according to mythology</p>
+          <p><b>Unique Feature:</b> No idol; worships the yoni (womb-shaped stone) in a cave with natural spring water</p>
+          <p><b>Main Festival:</b> Ambubachi Mela—celebrates the annual menstruation of the goddess</p>
+          <p><b>Cultural Role:</b> Major center for Tantric worship and spiritual practices</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Umananda Temple Section -->
+  <h3 class="mt-5">Umananda Temple</h3>
+  <div class="image-row">
+    <img src="images/assam2.jpg" alt="Umananda Temple">
+    <img src="images/assam4.jpg" alt="Umananda Temple">
+  </div>
+  
+  <p><b>Location:</b> Peacock Island, Brahmaputra River, Guwahati, Assam</p>
+  <p><b>Deity:</b> Lord Shiva (worshipped as Umananda)</p>
+  <p><b>Architecture:</b> Simple design with carvings of deities like Ganesha, Surya, and Vishnu on the rock walls</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#umanandaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Umananda -->
+  <div class="modal fade" id="umanandaModal" tabindex="-1" aria-labelledby="umanandaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="umanandaModalLabel">Umananda Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Legend:</b> Believed to be where Shiva meditated and incinerated Kamadeva with his third eye</p>
+          <p><b>Name Meaning:</b> "Umananda" combines Uma (Parvati) and Ananda (joy) — meaning “the bliss of Uma”</p>
+          <p><b>Built By:</b> Ahom King Gadadhar Singha in 1694 CE</p>
+          <p><b>Access:</b> Reachable only by ferry or boat from Guwahati</p>
+          <p><b>Festival:</b> Shivratri is celebrated with great devotion</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

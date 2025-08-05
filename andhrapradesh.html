@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Andhra Pradesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!--Tirumala Temple Section -->
+  <h3>Tirumala Venkateswara Temple</h3>
+  <div class="image-row">
+    <img src="images/andra1.jpg" alt="Tirumala Temple">
+    <img src="images/andra3.jpg" alt="Tirumala Temple">
+  </div>
+  <p><b>Location:</b> Tirumala Hills, Tirupati, Andhra Pradesh</p>
+  <p><b>Deity:</b> Lord Venkateswara (form of Vishnu)</p>
+  <p><b>Architecture:</b> Dravidian style; gold-plated sanctum (Ananda Nilayam)</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#tirumalaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Tirumala -->
+  <div class="modal fade" id="tirumalaModal" tabindex="-1" aria-labelledby="tirumalaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="tirumalaModalLabel">Tirumala Venkateswara Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Historical Era:</b> Dates back to 9th century; flourished under Vijayanagara Empire</p>
+          <p><b>Significance:</b> One of the richest and most visited temples in the world</p>
+          <p><b>Legend:</b> Lord Vishnu took a loan from Kubera for his marriage—donations help repay it</p>
+          <p><b>Pilgrimage:</b> 50,000–100,000 daily visitors; famous for hair offerings (tonsure)</p>
+          <p><b>Prasadam:</b> World-famous Laddu, GI-tagged</p>
+          <p><b>Management:</b> Administered by Tirumala Tirupati Devasthanams (TTD)</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kanaka Durga Temple Section -->
+  <h3>Kanaka Durga Temple</h3>
+  <div class="image-row">
+    <img src="images/andra2.jpg" alt="Kanaka Durga Temple">
+    <img src="images/andra4.jpg" alt="Kanaka Durga Temple">
+  </div>
+
+  <p><b>Location:</b> Indrakeeladri Hill, Vijayawada, Andhra Pradesh</p>
+  <p><b>Deity:</b> Goddess Kanaka Durga (form of Mahishasura Mardini)</p>
+  <p><b>Architecture:</b> Dravidian style with a commanding view of the Krishna River</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#kanakaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Kanaka Durga -->
+  <div class="modal fade" id="kanakaModal" tabindex="-1" aria-labelledby="kanakaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="kanakaModalLabel">Kanaka Durga Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> Major Shakti Peetha in South India</p>
+          <p><b>Legend:</b> Goddess Durga is believed to have killed the demon Mahishasura here and settled on Indrakeeladri Hill</p>
+          <p><b>Historical Mentions:</b> Referenced in Kalika Purana and Durga Saptashati</p>
+          <p><b>Festivals:</b> Famous for Dasara Navaratri celebrations—attracts lakhs of devotees</p>
+          <p><b>Access:</b> Reachable by road, ghat steps or ropeway</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples of Odisha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Jagannath Temple Section -->
+  <h3>Jagannath Temple</h3>
+  <div class="image-row">
+    <img src="images/odisha1.jpg" alt="Jagannath Temple">
+    <img src="images/odisha3.jpg" alt="Jagannath Temple ">
+  </div>
+ 
+  <p><b>Location:</b> Puri, Odisha (Eastern India)</p>
+  <p><b>Deities:</b> Lord Jagannath (form of Vishnu/Krishna), Subhadra, and Balabhadra</p>
+  <p><b>Architecture:</b> Kalinga style; tall tower with a chakra on top</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#jagannathModal">
+    More Info
+  </button>
+
+  <!-- Modal for Jagannath Temple -->
+  <div class="modal fade" id="jagannathModal" tabindex="-1" aria-labelledby="jagannathModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h5 class="modal-title" id="jagannathModalLabel">Jagannath Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> One of the Char Dham pilgrimage sites (along with Badrinath, Dwarka, and Rameswaram)</p>
+          <p><b>Unique Feature:</b> Deities made of wood and replaced every 12–19 years in a ritual called Nabakalebara</p>
+          <p><b>Mythology:</b> Lord Jagannath is worshipped with a tribal touch</p>
+          <p><b>Famous Festival:</b> Rath Yatra (Chariot Festival) – massive annual procession</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Lingaraj Temple Section -->
+  <h3 class="mt-5">Lingaraj Temple</h3>
+  <div class="image-row">
+    <img src="images/naga2.jpg" alt="Lingaraj Temple">
+    <img src="images/naga4.jpg" alt="Lingaraj Temple ">
+  </div>
+  
+  <p><b>Location:</b> Bhubaneswar, Odisha</p>
+  <p><b>Deity:</b> Lord Shiva (worshiped as Harihara – fusion of Shiva and Vishnu)</p>
+  <p><b>Architecture:</b> Classic Kalinga style – 55-meter tall spire, intricately carved</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#lingarajModal">
+    More Info
+  </button>
+
+  <!-- Modal for Lingaraj Temple -->
+  <div class="modal fade" id="lingarajModal" tabindex="-1" aria-labelledby="lingarajModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h5 class="modal-title" id="lingarajModalLabel">Lingaraj Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built In:</b> 11th century by Somavamsi rulers</p>
+          <p><b>Spiritual Importance:</b> Major Shaivite temple; spiritual hub of Bhubaneswar</p>
+          <p><b>Special Feature:</b> Non-Hindus are not allowed inside the temple</p>
+          <p><b>Festivals Celebrated:</b> Shivratri, Rukuna Rath Yatra</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

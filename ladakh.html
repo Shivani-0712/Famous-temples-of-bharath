@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Ladakh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Kali Mata Mandir Section -->
+  <h3>Kali Mata Mandir</h3>
+  <div class="image-row">
+    <img src="images/lad1.jpg" alt="Kali Mata Mandir">
+    <img src="images/lad3.jpg" alt="Kali Mata Mandir">
+  </div>
+
+  <p><b>Location:</b> Within Spituk Monastery, approx. 8 km from Leh, Ladakh</p>
+  <p><b>Deity:</b> Mahakala (a fierce Buddhist guardian deity)</p>
+  <p><b>Architecture:</b> Ancient black stone statues in upper monastery chambers</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-danger my-3" data-bs-toggle="modal" data-bs-target="#kaliModal">
+    More Info
+  </button>
+
+  <!-- Modal for Kali Mata Mandir -->
+  <div class="modal fade" id="kaliModal" tabindex="-1" aria-labelledby="kaliModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="kaliModalLabel">Kali Mata Mandir Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Unique Feature:</b> Idol of Mahakala unveiled only once a year</p>
+          <p><b>Festival:</b> Celebrates the Gustor Festival with mask dances and rituals</p>
+          <p><b>Significance:</b> Revered by Tibetan Buddhists; fusion of Hindu and Buddhist elements</p>
+          <p><b>Access:</b> Requires climbing to upper levels of Spituk Monastery</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mahakala Temple Section -->
+  <h3 class="mt-5">Mahakala Temple</h3>
+  <div class="image-row">
+    <img src="images/lad2.jpg" alt="Mahakala Temple">
+    <img src="images/lad4.jpg" alt="Mahakala Temple">
+  </div>
+
+  <p><b>Location:</b> Inside Spituk Monastery, near Leh, Ladakh</p>
+  <p><b>Deity:</b> Mahakala – a protector in Tibetan Buddhism</p>
+  <p><b>Architecture:</b> Historic monastery style with black stone idols</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-warning my-3" data-bs-toggle="modal" data-bs-target="#mahakalaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Mahakala Temple -->
+  <div class="modal fade" id="mahakalaModal" tabindex="-1" aria-labelledby="mahakalaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="mahakalaModalLabel">Mahakala Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Unique Feature:</b> Idol is shown to devotees only once a year during a sacred ritual</p>
+          <p><b>Festival:</b> Gustor Festival celebrated with sacred mask dances</p>
+          <p><b>Spiritual Importance:</b> Symbol of divine protection and transformation in Vajrayana Buddhism</p>
+          <p><b>Access:</b> Located on elevated levels of Spituk Monastery</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

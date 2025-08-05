@@ -1,0 +1,116 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples of Uttar Pradesh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Bhuteshwar Mahadev Temple Section -->
+  <h3>Bhuteshwar Mahadev Temple</h3>
+  <div class="image-row">
+    <img src="images/har1.jpg" alt="Bhuteshwar Mahadev Temple">
+    <img src="images/har3.jpg" alt="Bhuteshwar Mahadev Temple">
+  </div>
+
+  <p><b>Location:</b> Mathura, approx. 2 km from Mathura Junction Railway Station</p>
+  <p><b>Deity:</b> Lord Shiva, revered as Bhuteshwar Mahadev</p>
+  <p><b>Spiritual Significance:</b> One of the 51 Shakti Peethas</p>
+
+  <!-- Modal Trigger -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#bhuteshwarModal">
+    More Info
+  </button>
+
+  <!-- Modal for Bhuteshwar -->
+  <div class="modal fade" id="bhuteshwarModal" tabindex="-1" aria-labelledby="bhuteshwarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="bhuteshwarModalLabel">Bhuteshwar Mahadev Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Spiritual Significance:</b> Believed to be where a ringlet of Mata Sati fell</p>
+          <p><b>Unique Feature:</b> A rare Lord Shiva temple in Krishna's city</p>
+          <p><b>Historical Note:</b> Contains Patal Devi Cave associated with King Kansa</p>
+          <p><b>Visiting Hours:</b> 5:00 AM – 1:00 PM and 4:30 PM – 10:30 PM</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Sheetla Mata Mandir Section -->
+  <h3 class="mt-5">Sheetla Mata Mandir</h3>
+  <div class="image-row">
+    <img src="images/har2.jpg" alt="Sheetla Mata Mandir">
+    <img src="images/har4.jpg" alt="Sheetla Mata Mandir">
+  </div>
+  <img src="images/har2.jpg" class="img-fluid mb-3" width="50%" alt="Sheetla Mata Mandir">
+
+  <p><b>Location:</b> Mata Pokhara, Mau, approx. 2 km from Mau Railway Station</p>
+  <p><b>Deity:</b> Goddess Sheetla, protector against diseases</p>
+  <p><b>Cultural Role:</b> Considered the Kuldevi (family deity) by locals</p>
+
+  <!-- Modal Trigger -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#sheetlaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Sheetla Mata -->
+  <div class="modal fade" id="sheetlaModal" tabindex="-1" aria-labelledby="sheetlaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="sheetlaModalLabel">Sheetla Mata Mandir Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Festivals:</b> Navratri and Diwali celebrated with devotion</p>
+          <p><b>Importance:</b> Worshipped for protection against diseases like smallpox</p>
+          <p><b>Accessibility:</b> Easily reachable via local transport from railway and bus stations</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (includes Popper for modals) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

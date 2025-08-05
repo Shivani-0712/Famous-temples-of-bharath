@@ -1,0 +1,112 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Sikkim</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Kirateshwar Mahadev Temple Section -->
+  <h3>Kirateshwar Mahadev Temple</h3>
+  <div class="image-row">
+    <img src="images/sikkim1.jpg" alt="Lingaraj Temple">
+    <img src="images/sikkim3.jpg" alt="Lingaraj Temple ">
+  </div>
+
+  <p><b>Location:</b> Near Legship, West Sikkim, on the banks of the Rangit River</p>
+  <p><b>Deity:</b> Lord Shiva (Kirateshwar form)</p>
+  <p><b>Significance:</b> Believed to be where Lord Shiva tested Arjuna</p>
+
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#kirateshwarModal">
+    More Info
+  </button>
+
+  <!-- Modal for Kirateshwar Mahadev Temple -->
+  <div class="modal fade" id="kirateshwarModal" tabindex="-1" aria-labelledby="kirateshwarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="kirateshwarModalLabel">Kirateshwar Mahadev Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Pilgrimage Site:</b> A sacred site visited by locals and tourists alike</p>
+          <p><b>Festivals:</b> Bala Chaturdashi (Nov–Dec) and Maha Shivaratri (Feb–Mar)</p>
+          <p><b>Legend:</b> Lord Shiva, in the form of a hunter (Kirata), tested Arjuna's devotion here</p>
+          <p><b>Atmosphere:</b> Located in a peaceful riverside setting with a highly spiritual ambiance</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Legship Thakurbari Temple Section -->
+  <h3 class="mt-5">Legship Thakurbari Temple</h3>
+  <div class="image-row">
+    <img src="images/sikkim2.jpg" alt="Legship Thakurbari Temple<">
+    <img src="images/sikkim4.jpg" alt="Legship Thakurbari Temple<">
+  </div>
+
+  <p><b>Location:</b> Legship town, West Sikkim</p>
+  <p><b>Deity:</b> Lord Vishnu (Thakur)</p>
+  <p><b>Importance:</b> One of the oldest Hindu temples in Sikkim</p>
+
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#thakurbariModal">
+    More Info
+  </button>
+
+  <!-- Modal for Legship Thakurbari Temple -->
+  <div class="modal fade" id="thakurbariModal" tabindex="-1" aria-labelledby="thakurbariModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="thakurbariModalLabel">Legship Thakurbari Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Architecture:</b> Simple structure with traditional Hindu design elements</p>
+          <p><b>Community Role:</b> Central religious center for the local Hindu community</p>
+          <p><b>Festivals:</b> Janmashtami, Ram Navami, and other Vaishnavite celebrations</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

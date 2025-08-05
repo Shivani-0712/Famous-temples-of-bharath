@@ -1,0 +1,113 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Meghalaya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Nartiang Durga Temple -->
+  <h3>Nartiang Durga Temple</h3>
+  <div class="image-row">
+    <img src="images/megha1.jpg" alt="Nartiang Durga Temple">
+    <img src="images/megha3.jpg" alt="Nartiang Durga Temple">
+  </div>
+
+  <p><b>Location:</b> Nartiang village, West Jaintia Hills, Meghalaya</p>
+  <p><b>Deity:</b> Goddess Durga</p>
+  <p><b>Significance:</b> One of the 51 Shakti Peethas; believed to be where Sati’s left thigh fell</p>
+  <p><b>Cultural Fusion:</b> Blend of Hindu and Khasi tribal rituals</p>
+
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#nartiangModal">
+    More Info
+  </button>
+
+  <div class="modal fade" id="nartiangModal" tabindex="-1" aria-labelledby="nartiangModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="nartiangModalLabel">Nartiang Durga Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built By:</b> Kings of the Jaintia Kingdom after converting to Hinduism</p>
+          <p><b>Festivals:</b> Durga Puja celebrated with tribal animal sacrifice and Hindu customs</p>
+          <p><b>Architecture:</b> Simple stone structure with indigenous Khasi elements</p>
+          <p><b>Priests:</b> A Khasi tribal priest and a Hindu Brahmin jointly perform the rituals</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mahadev Khola Dham Temple -->
+  <h3 class="mt-5">Mahadev Khola Dham Temple</h3>
+  <div class="image-row">
+    <img src="images/megha2.jpg" alt="Mahadev Khola Dham Temple">
+    <img src="images/megha4.jpg" alt="Mahadev Khola Dham Temple">
+  </div>
+  
+  <p><b>Location:</b> Shillong, Meghalaya (near Umshyrpi River)</p>
+  <p><b>Deity:</b> Lord Shiva</p>
+  <p><b>Origin:</b> Discovered by a Gorkha Subedar after a divine dream</p>
+  <p><b>Architecture:</b> Built in North Indian style inside a cave</p>
+
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#mahadevModal">
+    More Info
+  </button>
+
+  <div class="modal fade" id="mahadevModal" tabindex="-1" aria-labelledby="mahadevModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="mahadevModalLabel">Mahadev Khola Dham Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Historical Link:</b> Associated with sage Lakhiya Baba</p>
+          <p><b>Age:</b> Approx. 150 years old</p>
+          <p><b>Belief:</b> Cave said to connect with Kamakhya Temple in Assam</p>
+          <p><b>Festival:</b> Maha Shivaratri – attracts over 25,000 devotees</p>
+          <p><b>Timings:</b> Open 6:00 AM–12:00 PM and 4:30 PM–6:00 PM</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

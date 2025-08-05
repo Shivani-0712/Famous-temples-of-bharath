@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Maharashtra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Siddhivinayak Temple Section -->
+  <h3 class="mt-5"> Siddhivinayak Temple</h3>
+  <div class="image-row">
+    <img src="images/mah1.jpg" alt="Siddhivinayak Temple">
+    <img src="images/mah3.jpg" alt="Siddhivinayak Temple">
+  </div>
+
+  <p><b>Location:</b> Prabhadevi, Mumbai, Maharashtra</p>
+  <p><b>Deity:</b> Lord Ganesha</p>
+  <p><b>Architecture:</b> Modern structure with gold-plated inner sanctum</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#siddhiModal">
+    More Info
+  </button>
+
+  <!-- Modal for Siddhivinayak -->
+  <div class="modal fade" id="siddhiModal" tabindex="-1" aria-labelledby="siddhiModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="siddhiModalLabel">Siddhivinayak Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Established:</b> In 1801 by Laxman Vithu and Deubai Patil</p>
+          <p><b>Significance:</b> Believed to fulfill wishes of devotees</p>
+          <p><b>Unique Feature:</b> Ganesha idol has a right-turned trunk and is made of black stone with a tilted trunk</p>
+          <p><b>Popular Among:</b> Celebrities, politicians, and common devotees alike</p>
+          <p><b>Festivals:</b> Ganesh Chaturthi is celebrated with great grandeur</p>
+          <p><b>Darshan Tip:</b> Tuesdays are especially crowded due to the special aarti</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Trimbakeshwar Temple Section -->
+  <h3 class="mt-5">Trimbakeshwar Temple</h3>
+  <div class="image-row">
+    <img src="images/mah2.jpg" alt="Trimbakeshwar Temple">
+    <img src="images/mah4.jpg" alt="Trimbakeshwar Temple">
+  </div>
+
+  <p><b>Location:</b> Trimbak town, near Nashik, Maharashtra</p>
+  <p><b>Deity:</b> Lord Shiva (as Trimbakeshwar – “Lord of the Three Eyes”)</p>
+  <p><b>Architecture:</b> Built with black stone in classic Hemadpanthi style</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#trimbakModal">
+    More Info
+  </button>
+
+  <!-- Modal for Trimbakeshwar -->
+  <div class="modal fade" id="trimbakModal" tabindex="-1" aria-labelledby="trimbakModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="trimbakModalLabel">Trimbakeshwar Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> One of the 12 Jyotirlingas in India; birthplace of the Godavari River</p>
+          <p><b>Unique Feature:</b> Linga has three faces representing Brahma, Vishnu, and Shiva</p>
+          <p><b>Kumbh Mela:</b> Held every 12 years here along with Nashik</p>
+          <p><b>Rituals:</b> Known for Narayan Nagbali, Kalsarpa Dosha, and Pitru Dosh pujas</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

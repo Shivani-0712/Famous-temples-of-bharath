@@ -1,0 +1,120 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of West Bengal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Dakshineswar Kali Temple Section -->
+  <h3>Dakshineswar Kali Temple</h3>
+  <div class="image-row">
+    <img src="images/west1.jpg" alt="Dakshineswar Kali Temple">
+    <img src="images/west4.jpg" alt="Dakshineswar Kali Temple">
+  </div>
+  
+  <p><b>Location:</b> On the eastern bank of the Hooghly River, near Kolkata</p>
+  <p><b>Deity:</b> Goddess Bhavatarini, a form of Kali</p>
+  <p><b>Built By:</b> Rani Rashmoni in 1855</p>
+  
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#dakshineswarModal">
+    More Info
+  </button>
+
+  <!-- Modal for Dakshineswar Kali Temple -->
+  <div class="modal fade" id="dakshineswarModal" tabindex="-1" aria-labelledby="dakshineswarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="dakshineswarModalLabel">Dakshineswar Kali Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Architecture:</b> Classic Navaratna (nine spires) Bengali temple style</p>
+  <p><b>Famous For:</b> Associated with Sri Ramakrishna Paramahamsa, tranquil riverside location, and large courtyard with 12 Shiva temples</p>
+  <p><b>Spiritual Hub:</b> Pilgrims, tourists, and spiritual seekers visit year-round</p>
+  <p><b>Festival:</b> Kali Puja and Navaratri celebrated grandly</p>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Kalighat Temple Section -->
+  <h3 class="mt-5">Kalighat Temple</h3>
+  <div class="image-row">
+    <img src="images/west2.jpg" alt="Kalighat Temple">
+    <img src="images/west3.jpg" alt="Kalighat Temple">
+  </div>
+
+  <p><b>Location:</b> Kalighat area, south Kolkata</p>
+  <p><b>Deity:</b> Goddess Kali (as Kalika)</p>
+  <p><b>One of the 51 Shakti Peethas:</b> Where the right toe of Sati is believed to have fallen</p>
+  
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#kalighatModal">
+    More Info
+  </button>
+
+  <!-- Modal for Kalighat Temple -->
+  <div class="modal fade" id="kalighatModal" tabindex="-1" aria-labelledby="kalighatModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="kalighatModalLabel">Kalighat Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>History:</b> Ancient origins; the current structure was built in 1809</p>
+  <p><b>Architecture:</b> Traditional Bengali hut-style (chala) with a unique idol of Kali</p>
+  <p><b>Significance:</b> One of the holiest sites for Shakti worship in India</p>
+  <p><b>Rituals:</b> Known for intense devotion, daily offerings, and tantric significance</p>
+  <p><b>Festival:</b> Massive crowds during Kali Puja, Durga Puja, and Navaratri</p>
+
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

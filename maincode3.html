@@ -1,0 +1,285 @@
+mport React from 'react';
+
+interface IndiaMapProps {
+  onStateHover: (stateId: string, event: React.MouseEvent) => void;
+  onStateLeave: () => void;
+}
+
+const IndiaMap: React.FC<IndiaMapProps> = ({ onStateHover, onStateLeave }) => {
+  const handleStateHover = (stateId: string) => (event: React.MouseEvent) => {
+    onStateHover(stateId, event);
+  };
+
+  return (
+    <div className="w-full max-w-4xl mx-auto">
+      <svg
+        viewBox="0 0 1000 800"
+        className="w-full h-auto"
+        xmlns="http://www.w3.org/2000/svg"
+        onMouseLeave={onStateLeave}
+      >
+        {/* Jammu & Kashmir */}
+        <path
+          d="M300 80 L380 70 L420 120 L390 160 L350 140 L320 120 Z"
+          fill="#e74c3c"
+          stroke="#c0392b"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('jammu-kashmir')}
+        />
+        <text x="360" y="115" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          J&K
+        </text>
+
+        {/* Himachal Pradesh */}
+        <path
+          d="M320 120 L390 110 L420 150 L380 170 L340 160 Z"
+          fill="#f39c12"
+          stroke="#e67e22"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('himachal-pradesh')}
+        />
+        <text x="370" y="145" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          HP
+        </text>
+
+        {/* Punjab */}
+        <path
+          d="M300 150 L360 140 L380 180 L340 190 L310 180 Z"
+          fill="#9b59b6"
+          stroke="#8e44ad"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('punjab')}
+        />
+        <text x="340" y="170" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Punjab
+        </text>
+
+        {/* Rajasthan */}
+        <path
+          d="M200 200 L320 180 L340 280 L280 320 L220 300 L180 250 Z"
+          fill="#f1c40f"
+          stroke="#f39c12"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('rajasthan')}
+        />
+        <text x="260" y="250" textAnchor="middle" className="fill-gray-800 text-sm font-medium pointer-events-none">
+          Rajasthan
+        </text>
+
+        {/* Uttar Pradesh */}
+        <path
+          d="M340 200 L480 190 L500 260 L460 300 L380 290 L350 250 Z"
+          fill="#3498db"
+          stroke="#2980b9"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('uttar-pradesh')}
+        />
+        <text x="420" y="245" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Uttar Pradesh
+        </text>
+
+        {/* Bihar */}
+        <path
+          d="M480 240 L560 230 L580 280 L540 300 L500 290 Z"
+          fill="#e67e22"
+          stroke="#d35400"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('bihar')}
+        />
+        <text x="530" y="265" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Bihar
+        </text>
+
+        {/* West Bengal */}
+        <path
+          d="M560 280 L620 270 L640 320 L600 350 L570 340 L550 310 Z"
+          fill="#2ecc71"
+          stroke="#27ae60"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('west-bengal')}
+        />
+        <text x="590" y="310" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          West Bengal
+        </text>
+
+        {/* Maharashtra */}
+        <path
+          d="M280 320 L400 310 L420 380 L360 420 L300 410 L260 370 Z"
+          fill="#e91e63"
+          stroke="#c2185b"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('maharashtra')}
+        />
+        <text x="340" y="365" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Maharashtra
+        </text>
+
+        {/* Madhya Pradesh */}
+        <path
+          d="M340 280 L460 270 L480 340 L420 380 L380 370 L360 320 Z"
+          fill="#9c27b0"
+          stroke="#7b1fa2"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('madhya-pradesh')}
+        />
+        <text x="420" y="325" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Madhya Pradesh
+        </text>
+
+        {/* Gujarat */}
+        <path
+          d="M180 320 L280 310 L300 380 L250 420 L200 400 L160 360 Z"
+          fill="#ff5722"
+          stroke="#e64a19"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('gujarat')}
+        />
+        <text x="230" y="365" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Gujarat
+        </text>
+
+        {/* Odisha */}
+        <path
+          d="M500 340 L580 330 L600 390 L560 420 L520 410 L480 380 Z"
+          fill="#673ab7"
+          stroke="#512da8"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('odisha')}
+        />
+        <text x="540" y="375" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Odisha
+        </text>
+
+        {/* Chhattisgarh */}
+        <path
+          d="M420 380 L500 370 L520 420 L480 450 L440 440 L400 410 Z"
+          fill="#00bcd4"
+          stroke="#0097a7"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('chhattisgarh')}
+        />
+        <text x="460" y="410" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Chhattisgarh
+        </text>
+
+        {/* Karnataka */}
+        <path
+          d="M300 450 L400 440 L420 510 L380 550 L320 540 L280 500 Z"
+          fill="#4caf50"
+          stroke="#388e3c"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('karnataka')}
+        />
+        <text x="350" y="495" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Karnataka
+        </text>
+
+        {/* Tamil Nadu */}
+        <path
+          d="M380 520 L480 510 L500 580 L460 620 L400 610 L360 570 Z"
+          fill="#ff9800"
+          stroke="#f57c00"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('tamil-nadu')}
+        />
+        <text x="430" y="565" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Tamil Nadu
+        </text>
+
+        {/* Kerala */}
+        <path
+          d="M320 540 L380 530 L400 600 L360 640 L320 630 L300 580 Z"
+          fill="#4caf50"
+          stroke="#2e7d32"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('kerala')}
+        />
+        <text x="350" y="585" textAnchor="middle" className="fill-white text-sm font-medium pointer-events-none">
+          Kerala
+        </text>
+
+        {/* Andhra Pradesh */}
+        <path
+          d="M420 450 L520 440 L540 510 L500 550 L460 540 L440 490 Z"
+          fill="#795548"
+          stroke="#5d4037"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('andhra-pradesh')}
+        />
+        <text x="480" y="495" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Andhra Pradesh
+        </text>
+
+        {/* Telangana */}
+        <path
+          d="M440 420 L500 410 L520 460 L480 490 L450 480 L430 450 Z"
+          fill="#607d8b"
+          stroke="#455a64"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('telangana')}
+        />
+        <text x="475" y="450" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Telangana
+        </text>
+
+        {/* Goa */}
+        <path
+          d="M260 420 L300 410 L320 450 L290 470 L270 460 Z"
+          fill="#ffeb3b"
+          stroke="#fbc02d"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('goa')}
+        />
+        <text x="290" y="440" textAnchor="middle" className="fill-gray-800 text-xs font-medium pointer-events-none">
+          Goa
+        </text>
+
+        {/* Assam */}
+        <path
+          d="M650 260 L720 250 L740 300 L710 330 L680 320 L660 290 Z"
+          fill="#8bc34a"
+          stroke="#689f38"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('assam')}
+        />
+        <text x="700" y="290" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Assam
+        </text>
+
+        {/* Jharkhand */}
+        <path
+          d="M520 300 L580 290 L600 340 L560 370 L530 360 L510 330 Z"
+          fill="#ff5722"
+          stroke="#d84315"
+          strokeWidth="2"
+          className="cursor-pointer hover:opacity-80 transition-all duration-300"
+          onMouseEnter={handleStateHover('jharkhand')}
+        />
+        <text x="555" y="330" textAnchor="middle" className="fill-white text-xs font-medium pointer-events-none">
+          Jharkhand
+        </text>
+      </svg>
+    </div>
+  );
+};
+
+export default IndiaMap;

@@ -1,0 +1,114 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Nagaland</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Dimapur Kalibari Temple Section -->
+  <h3>Dimapur Kalibari Temple</h3>
+  <div class="image-row">
+    <img src="images/naga1.jpg" alt="Dimapur Kalibari Temple">
+    <img src="images/naga3.jpg" alt="Dimapur Kalibari Temple">
+  </div>
+  
+  <p><b>Location:</b> Dimapur, Nagaland</p>
+  <p><b>Dedicated to:</b> Goddess Kali</p>
+  <p><b>Established:</b> Built in 1956</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#kalibariModal">
+    More Info
+  </button>
+
+  <!-- Modal for Kalibari Temple -->
+  <div class="modal fade" id="kalibariModal" tabindex="-1" aria-labelledby="kalibariModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="kalibariModalLabel">Dimapur Kalibari Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Architecture:</b> Traditional Hindu temple design with intricate carvings</p>
+          <p><b>Cultural Importance:</b> Major center for Bengali Hindu community in Dimapur</p>
+          <p><b>Festivals:</b> Celebrates Kali Puja, Durga Puja, and Diwali with great enthusiasm</p>
+          <p><b>Community Role:</b> Acts as a spiritual and cultural hub for organizing religious events</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Hanuman Mandir Section -->
+  <h3 class="mt-5">Hanuman Mandir (Dimapur)</h3>
+  <div class="image-row">
+    <img src="images/naga2.jpg" alt="Hanuman Mandir ">
+    <img src="images/naga4.jpg" alt="Hanuman Mandir ">
+  </div>
+  
+  <p><b>Location:</b> Dimapur, near Railway Station area</p>
+  <p><b>Dedicated to:</b> Lord Hanuman</p>
+  <p><b>Spiritual Significance:</b> Symbol of strength, protection, and devotion to Lord Rama</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#hanumanModal">
+    More Info
+  </button>
+
+  <!-- Modal for Hanuman Mandir -->
+  <div class="modal fade" id="hanumanModal" tabindex="-1" aria-labelledby="hanumanModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="hanumanModalLabel">Hanuman Mandir Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Visitors:</b> Popular among locals and travelers, especially on Tuesdays and Saturdays</p>
+          <p><b>Festivals:</b> Celebrates Hanuman Jayanti and Ram Navami</p>
+          <p><b>Ambience:</b> Known for its peaceful, spiritual environment</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modals) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

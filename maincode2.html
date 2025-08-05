@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Famous Temples of India</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .map-container {
+      text-align: center;
+      position: relative;
+    }
+    .popup-box {
+      display: none;
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      width: 220px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+    .popup-box h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+    .popup-box p {
+      margin: 5px 0;
+      font-size: 13px;
+      color: #555;
+    }
+    .popup-box a {
+      text-decoration: none;
+      color: #0066cc;
+      font-size: 13px;
+    }
+    .close-btn {
+      float: right;
+      font-weight: bold;
+      cursor: pointer;
+      color: #999;
+    }
+    .close-btn:hover {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="map-container">
+    <img src="india.jpg" usemap="#india" id="india-map" />
+    <map name="india">
+      <area shape="rect" coords="300,400,310,410" href="#" onclick="showPopup('popup-ap'); return false;" alt="Andhra Pradesh" />
+      <area shape="rect" coords="620,120,630,130" href="#" onclick="showPopup('popup-ar'); return false;" alt="Arunachal Pradesh" />
+      <!-- Add more clickable areas similarly -->
+    </map>
+
+    <div id="popup-ap" class="popup-box" style="top: 400px; left: 300px;">
+      <span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+      <h3>Andhra Pradesh</h3>
+      <p><strong>Tirumala Venkateswara Temple</strong></p>
+      <img src="images/andra1.jpg" width="100%">
+      <p><b>Location</b>: Tirumala Hills, Tirupati, Andhra Pradesh</p>
+      <a href="andhrapradesh.html" target="_blank">View More →</a>
+    </div>
+
+    <div id="popup-ar" class="popup-box" style="top: 120px; left: 620px;">
+      <span class="close-btn" onclick="this.parentElement.style.display='none'">x</span>
+      <h3>Arunachal Pradesh</h3>
+      <p><strong>Parashuram Kund Temple</strong></p>
+      <img src="images/arun1.jpg" width="100%">
+      <p><b>Location</b>: Lohit district, Arunachal Pradesh</p>
+      <a href="arunachalpradesh.html" target="_blank">View More →</a>
+    </div>
+
+    <!-- More popup-boxes go here... Repeat structure for each state -->
+
+  </div>
+
+  <script>
+    function showPopup(id) {
+      // Hide all other popups
+      document.querySelectorAll('.popup-box').forEach(box => box.style.display = 'none');
+      // Show the selected popup
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>

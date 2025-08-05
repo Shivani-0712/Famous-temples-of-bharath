@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temples of Rajasthan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Brahma Temple Section -->
+  <h3>Brahma Temple – Pushkar</h3>
+  <div class="image-row">
+    <img src="images/raj1.jpg" alt="Brahma Temple">
+    <img src="images/raj3.jpg" alt=" Brahma Temple">
+  </div>
+ 
+  <p><b>Location:</b> Pushkar, Rajasthan, India</p>
+  <p><b>Deity:</b> Lord Brahma (the Creator in Hindu Trinity)</p>
+  <p><b>Unique Fact:</b> One of the very few Brahma temples in the world</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#brahmaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Brahma Temple -->
+  <div class="modal fade" id="brahmaModal" tabindex="-1" aria-labelledby="brahmaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="brahmaModalLabel">Brahma Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Built By:</b> Originally constructed in the 14th century</p>
+          <p><b>Architecture:</b> Red shikhara (spire), marble & stone structure, silver turtle in sanctum</p>
+          <p><b>Sacred Pond:</b> Located next to the holy Pushkar Lake</p>
+          <p><b>Major Festival:</b> Kartika Purnima celebrated with a grand Pushkar fair</p>
+          <p><b>Legend:</b> Linked to Brahma's yajna (sacrifice) and the creation of Pushkar town</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Karni Mata Temple Section -->
+  <h3 class="mt-5">Karni Mata Temple – Deshnoke</h3>
+  <div class="image-row">
+    <img src="images/raj2.jpg" alt="">
+    <img src="images/raj4.jpg" alt=" ">
+  </div>
+
+  <p><b>Location:</b> Deshnoke, near Bikaner, Rajasthan</p>
+  <p><b>Deity:</b> Karni Mata (incarnation of Goddess Durga)</p>
+  <p><b>Famous For:</b> Over 25,000 sacred rats (kabbas)</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#karniModal">
+    More Info
+  </button>
+
+  <!-- Modal for Karni Mata Temple -->
+  <div class="modal fade" id="karniModal" tabindex="-1" aria-labelledby="karniModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="karniModalLabel">Karni Mata Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Unique Belief:</b> Rats are considered her devotees; white rats are especially sacred</p>
+          <p><b>Built:</b> Early 20th century by Maharaja Ganga Singh of Bikaner</p>
+          <p><b>Architecture:</b> Mughal-style marble façade, silver gates</p>
+          <p><b>Major Festival:</b> Navratri with grand celebrations</p>
+          <p><b>Legend:</b> Devotees of Karni Mata reincarnate as rats after death</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

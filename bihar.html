@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temples of Bihar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <style>
+    .image-row {
+      display: flex;
+      gap: 10px; /* optional: space between images */
+      justify-content: center; /* optional: center the images horizontally */
+      align-items: center; /* optional: vertically align */
+    }
+  
+    .image-row img {
+      width: 300px; /* adjust width as needed */
+      height: auto;
+      border-radius: 8px; /* optional: rounded corners */
+    }
+  </style>
+  <body>
+  
+  <div class="container text-center my-5">
+  
+    <!-- Mahabodhi Temple Section -->
+    <h3>Mahabodhi Temple</h3>
+    <div class="image-row">
+      <img src="images/bihar1.jpg" alt="Mahabodhi Temple">
+      <img src="images/bihar3.jpg" alt="Mahabodhi Temple">
+    </div>
+  
+    <p><b>Location:</b> Bodh Gaya, Bihar</p>
+    <p><b>Significance:</b> Site where Gautama Buddha attained enlightenment under the Bodhi tree</p>
+    <p><b>Deity:</b> Not a deity-based temple; it is a Buddhist pilgrimage site</p>
+  
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#mahabodhiModal">
+      More Info
+    </button>
+  
+    <!-- Modal for Mahabodhi Temple -->
+    <div class="modal fade" id="mahabodhiModal" tabindex="-1" aria-labelledby="mahabodhiModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h5 class="modal-title" id="mahabodhiModalLabel">Mahabodhi Temple Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body text-start">
+            <p><b>Original Construction:</b> Built by Emperor Ashoka in the 3rd century BCE</p>
+            <p><b>Current Structure:</b> Dates to the 5th–6th century CE, restored over time</p>
+            <p><b>Architecture:</b> Classic brick-built Indian temple with a tall pyramidal spire</p>
+            <p><b>UNESCO Status:</b> Declared a World Heritage Site in 2002</p>
+            <p><b>Sacred Elements:</b> Includes the Bodhi Tree, Vajrasana (Diamond Throne), and Buddha’s statue</p>
+            <p><b>Pilgrimage Importance:</b> One of the four holiest Buddhist sites globally</p>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <!-- Vishnupad Temple Section -->
+    <h3 class="mt-5">Vishnupad Temple</h3>
+    <div class="image-row">
+      <img src="images/bihar2.jpg" alt="Mahabodhi Temple">
+      <img src="images/bihar4.jpg" alt="Mahabodhi Temple">
+    </div>
+
+    <p><b>Location:</b> Gaya, Bihar</p>
+    <p><b>Deity:</b> Lord Vishnu</p>
+    <p><b>Significance:</b> Temple enshrines Vishnu's footprint</p>
+  
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#vishnupadModal">
+      More Info
+    </button>
+  
+    <!-- Modal for Vishnupad Temple -->
+    <div class="modal fade" id="vishnupadModal" tabindex="-1" aria-labelledby="vishnupadModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+  
+          <div class="modal-header">
+            <h5 class="modal-title" id="vishnupadModalLabel">Vishnupad Temple Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body text-start">
+            <p><b>Rituals:</b> Famous for Pind Daan (ancestral offerings)</p>
+            <p><b>Architecture:</b> Traditional temple design with a tall shikhara (spire)</p>
+            <p><b>Legends:</b> Associated with Lord Vishnu's Varaha avatar</p>
+            <p><b>Religious Importance:</b> Considered one of the 108 Divya Desams</p>
+            <p><b>Festivals:</b> Celebrated during Vaikuntha Ekadashi and Pitru Paksha</p>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  

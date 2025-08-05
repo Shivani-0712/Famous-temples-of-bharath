@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temples of Gujarat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<style>
+  .image-row {
+    display: flex;
+    gap: 10px; /* optional: space between images */
+    justify-content: center; /* optional: center the images horizontally */
+    align-items: center; /* optional: vertically align */
+  }
+
+  .image-row img {
+    width: 300px; /* adjust width as needed */
+    height: auto;
+    border-radius: 8px; /* optional: rounded corners */
+  }
+</style>
+<body>
+
+<div class="container text-center my-5">
+
+  <!-- Somnath Temple Section -->
+  <h3>Somnath Temple</h3>
+  <div class="image-row">
+    <img src="images/gujarat1.jpg" alt="Somnath Temple">
+    <img src="images/gujarat3.jpg" alt="Somnath Temple">
+  </div>
+
+  <p><b>Location:</b> Prabhas Patan, near Veraval, Saurashtra, Gujarat</p>
+  <p><b>Deity:</b> Lord Shiva (Somnath – The Lord of the Moon)</p>
+  <p><b>Architecture:</b> Reconstructed in Chalukya style; known for resilience through history</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#somnathModal">
+    More Info
+  </button>
+
+  <!-- Modal for Somnath -->
+  <div class="modal fade" id="somnathModal" tabindex="-1" aria-labelledby="somnathModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="somnathModalLabel">Somnath Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Historical Significance:</b> One of the 12 sacred Jyotirlingas</p>
+          <p><b>Legends:</b> Moon God (Chandra) worshipped Shiva here for redemption</p>
+          <p><b>Importance:</b> Integral part of the Char Dham pilgrimage</p>
+          <p><b>Destruction & Rebuilding:</b> Rebuilt multiple times; last restored in 1951 by Sardar Vallabhbhai Patel</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Dwarkadhish Temple Section -->
+  <h3 class="mt-5">Dwarkadhish Temple</h3>
+  <div class="image-row">
+    <img src="images/gujarat2.jpg" alt="Dwarkadhish Temple">
+    <img src="images/gujarat4.jpg" alt="Dwarkadhish Temple">
+  </div>
+
+  <p><b>Location:</b> Dwarka, Gujarat</p>
+  <p><b>Deity:</b> Lord Krishna (Dwarkadhish – King of Dwarka)</p>
+  <p><b>Architecture:</b> Traditional spire temple with intricate carvings and grand sanctum</p>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#dwarkaModal">
+    More Info
+  </button>
+
+  <!-- Modal for Dwarkadhish -->
+  <div class="modal fade" id="dwarkaModal" tabindex="-1" aria-labelledby="dwarkaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="dwarkaModalLabel">Dwarkadhish Temple Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body text-start">
+          <p><b>Significance:</b> Part of Char Dham; major Krishna pilgrimage site</p>
+          <p><b>Historical Background:</b> Linked to the ancient city of Dwarka ruled by Krishna</p>
+          <p><b>Legends:</b> Reflects stories from Krishna’s life and divine acts</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle (required for modal functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
